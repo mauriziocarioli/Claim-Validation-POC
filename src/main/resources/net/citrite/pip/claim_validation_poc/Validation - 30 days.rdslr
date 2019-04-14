@@ -1,0 +1,9 @@
+package net.citrite.pip.claim_validation_poc;
+
+import java.lang.Number;
+
+rule "Validation - 30 days"
+	dialect "mvel"
+	when
+	then
+end
