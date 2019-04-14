@@ -1,9 +1,20 @@
 package net.citrite.pip.claim_validation_poc;
 
-import java.lang.Number;
+import net.citrite.pip.sfdc.Order;
+import net.citrite.pip.sfdc.RewardRegistration;
+import net.citrite.pip.bre.Validation;
 
 rule "Validation - 30 days"
 	dialect "mvel"
 	when
+		>RewardRegistration( d : initial_Submitted_Date)
+		>Order( orderHeader.order_Creation_Date < d )
+		>v : Validation( )
 	then
+		>modify( v ) {
+				>setCheckName( "Minimum Registration Timeline Unmet" ), 
+				>setCheckType( "STANDARD" ), 
+				>setCheckResult( "FAIL" ), 
+				>setHeader( true )
+		>}
 end
