@@ -10,6 +10,8 @@ rule "SomeRule"
 		Order( orderCreationDate : orderHeader.order_Creation_Date)
 		OriginalOrder( originalOrderCreationDate : creation_Date)
 		validation : Validation( )
+		h : Helper( )
+		h.betweenDates(orderCreationDate,originalOrderCreationDate) > 2
 	then
 		modify( validation ) {
 				setCheckName( "Minimum Follow On Order Timeline Unmet" ), 
