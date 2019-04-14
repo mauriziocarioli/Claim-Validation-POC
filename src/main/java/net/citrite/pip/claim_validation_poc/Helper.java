@@ -10,11 +10,11 @@ import java.time.temporal.ChronoUnit;
 public class Helper implements java.io.Serializable {
 
     static final long serialVersionUID = 1L;
-
+    
     public Helper() {
     }
     
-    public long betweenDates(LocalDate firstDate, LocalDate secondDate) {
+    public long daysBetweenDates(LocalDate firstDate, LocalDate secondDate) {
         return ChronoUnit.DAYS.between(firstDate, secondDate);
     }
 
