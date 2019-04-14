@@ -1,0 +1,1 @@
+[when]Days between {firstDate} and {secondDate} = Helper( eval( betweenDates( {firstDate}, {secondDate} ) > 2 ) )
