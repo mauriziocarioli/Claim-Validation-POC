@@ -9,6 +9,7 @@ rule "Validation - 2 Day Follow on Orders"
 	when
 		>Order( d1 : orderHeader.order_Creation_Date)
 		>OriginalOrder( d2 : creation_Date)
+		Days between d1 and d2 are greater than 2
 		>v : Validation( )
 	then
 		>modify( v ) {
