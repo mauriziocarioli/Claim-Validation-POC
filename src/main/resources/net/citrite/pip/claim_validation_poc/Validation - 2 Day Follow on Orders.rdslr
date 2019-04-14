@@ -1,9 +1,13 @@
 package net.citrite.pip.claim_validation_poc;
 
-import java.lang.Number;
+import net.citrite.pip.sfdc.Order;
+import net.citrite.pip.sfdc.OriginalOrder;
+import net.citrite.pip.bre.Validation;
 
 rule "Validation - 2 Day Follow on Orders"
 	dialect "mvel"
 	when
+		>Order( d1 : orderHeader.order_Creation_Date)
+		>OriginalOrder( d2 : creation_Date)
 	then
 end
