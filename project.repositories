@@ -3,14 +3,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>RH-GA</id>
-        <url>https://maven.repository.redhat.com/ga</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>local</id>
         <url>/home/ec2-user/.m2/repository</url>
         <source>LOCAL</source>
@@ -19,8 +11,8 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>RH-ER</id>
-        <url>https://maven.repository.redhat.com/earlyaccess/all</url>
+        <id>RH-GA</id>
+        <url>https://maven.repository.redhat.com/ga</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -30,6 +22,14 @@
         <id>central</id>
         <url>https://repo.maven.apache.org/maven2</url>
         <source>PROJECT</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>RH-ER</id>
+        <url>https://maven.repository.redhat.com/earlyaccess/all</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
   </repositories>
