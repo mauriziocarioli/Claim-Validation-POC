@@ -1,0 +1,9 @@
+package net.citrite.pip.claim_validation_poc;
+
+import java.lang.Number;
+
+rule "Validation - 2 Day Follow on Orders"
+	dialect "mvel"
+	when
+	then
+end
