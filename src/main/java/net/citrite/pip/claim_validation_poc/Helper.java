@@ -15,7 +15,7 @@ public class Helper implements java.io.Serializable {
     }
     
     public long betweenDates(LocalDate firstDate, LocalDate secondDate) {
-        return ChronoUnit.DAYS.between(firstDate, secondDate);;
+        return ChronoUnit.DAYS.between(firstDate, secondDate);
     }
 
 }
