@@ -1,1 +1,1 @@
-[when]Days between {firstDate} and {secondDate} are greater than {n} =  ChronoUnit.DAYS.between(firstDate, secondDate) > {n}  )
+[when]Days between {firstDate} and {secondDate} are greater than {n} =  Helper( this.betweenDates(firstDate, secondDate) > {n}  )
