@@ -1,9 +1,10 @@
 package net.citrite.pip.claim_validation_poc;
 
-import java.lang.Number;
+import net.citrite.pip.canonical.bre.BREObjectSFDC;
 
 rule "BRE Object SFDC"
 	dialect "mvel"
 	when
+		breObjectSFDC : BREObjectSFDC( )
 	then
 end
