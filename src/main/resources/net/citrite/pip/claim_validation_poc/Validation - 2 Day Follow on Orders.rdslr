@@ -5,11 +5,10 @@ import net.citrite.pip.sfdc.OriginalOrder;
 import net.citrite.pip.bre.Validation;
 import net.citrite.pip.canonical.bre.BREObjectSFDC;
 
-rule "Validation - 2 Day Follow on Orders"
+rule "Validation - 2 Day Follow on Orders" extends "Is Follow On Order"
 	dialect "mvel"
 	when
-		>Order( d1 : orderHeader.order_Creation_Date, orderId : orderHeader.order_ID)
-		>OriginalOrder( d2 : creation_Date)
+		>BREObjectSFDC( d2 : request.originalOrder.creation_Date, d1 : request.order.orderHeader.order_Creation_Date, orderId : request.order.orderHeader.order_ID)
 		Days between d1 and d2 are greater than 2
 		>bre : BREObjectSFDC( )
 	then
