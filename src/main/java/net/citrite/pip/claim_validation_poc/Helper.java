@@ -20,9 +20,10 @@ public final class Helper implements java.io.Serializable {
         return ChronoUnit.DAYS.between(firstDate, secondDate);
     }
     
-    public static void registerValidation(BREObjectSFDC breObjectSFDC, String checkName, String checkType, String checkResult, Boolean header) {
+    public static void registerValidation(BREObjectSFDC breObjectSFDC, String orderID, String checkName, String checkType, String checkResult, Boolean header) {
         
         Validation validation = new Validation();
+        validation.setOrderID(orderID);
         validation.setCheckName(checkName);
         validation.setCheckType(checkType);
         validation.setCheckResult(checkResult);
