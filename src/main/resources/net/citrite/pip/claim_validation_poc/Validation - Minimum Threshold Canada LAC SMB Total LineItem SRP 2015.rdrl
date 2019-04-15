@@ -1,0 +1,9 @@
+package net.citrite.pip.claim_validation_poc;
+
+import java.lang.Number;
+
+rule "Validation - Minimum Threshold Canada LAC SMB Total LineItem SRP 2015"
+	dialect "mvel"
+	when
+	then
+end
