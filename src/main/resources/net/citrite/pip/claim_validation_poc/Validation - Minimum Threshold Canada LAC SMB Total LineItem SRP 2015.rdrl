@@ -7,9 +7,6 @@ rule "Validation - Minimum Threshold Canada LAC SMB Total LineItem SRP 2015"
 	dialect "mvel"
 	when
 		Order( orderLineItems : orderLineItems)
-		orderTotalSRP : Double( ) from accumulate ( 		OrderLineItem( srp : SRP_USD) from orderLineItems
-,
-			sum(srp)) 
-		OrderLineItem( SRP_USD == 0.0 )
+		orderTotalSRP : Double(compareTo(2500.00) >= 0, compareTo(10000) < 0 ) from accumulate ( 	OrderLineItem( srp : SRP_USD) from orderLineItems, sum(srp))
 	then
 end
