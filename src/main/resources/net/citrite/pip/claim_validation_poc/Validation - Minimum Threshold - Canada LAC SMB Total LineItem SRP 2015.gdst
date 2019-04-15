@@ -203,25 +203,29 @@
           <fieldValues>
             <org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
               <field>registerValidation</field>
-              <nature>0</nature>
+              <value></value>
+              <nature>1</nature>
               <type>String</type>
               <method></method>
             </org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
             <org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
               <field>registerValidation</field>
-              <nature>0</nature>
+              <value></value>
+              <nature>1</nature>
               <type>String</type>
               <method></method>
             </org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
             <org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
               <field>registerValidation</field>
-              <nature>0</nature>
+              <value></value>
+              <nature>1</nature>
               <type>String</type>
               <method></method>
             </org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
             <org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
               <field>registerValidation</field>
-              <nature>0</nature>
+              <value></value>
+              <nature>1</nature>
               <type>String</type>
               <method></method>
             </org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
@@ -357,7 +361,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
+        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
