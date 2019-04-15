@@ -1,9 +1,0 @@
-package net.citrite.pip.claim_validation_poc;
-
-import java.lang.Number;
-
-rule "Rule with Date"
-	dialect "mvel"
-	when
-	then
-end
