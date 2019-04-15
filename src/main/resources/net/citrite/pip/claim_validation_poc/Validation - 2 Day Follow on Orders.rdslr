@@ -3,12 +3,15 @@ package net.citrite.pip.claim_validation_poc;
 import net.citrite.pip.sfdc.Order;
 import net.citrite.pip.sfdc.OriginalOrder;
 import net.citrite.pip.bre.Validation;
+import net.citrite.pip.canonical.bre.BREObjectSFDC;
 
 rule "Validation - 2 Day Follow on Orders"
 	dialect "mvel"
 	when
-		>Order( d1 : orderHeader.order_Creation_Date, id : orderHeader.order_ID)
+		>Order( d1 : orderHeader.order_Creation_Date, orderId : orderHeader.order_ID)
 		>OriginalOrder( d2 : creation_Date)
 		Days between d1 and d2 are greater than 2
+		>bre : BREObjectSFDC( )
 	then
+		Register Validation with bre for orderId as name  type  result as header
 end
