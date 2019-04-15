@@ -1,11 +1,6 @@
 package net.citrite.pip.claim_validation_poc;
 
-import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
-import net.citrite.pip.canonical.bre.BREObjectSFDC;
-import net.citrite.pip.bre.Validation;
-
-function void registerValidation(BREObjectSFDC breObjectSFDC, String orderID, String checkName, String checkType, String checkResult, Boolean header) {
+/*function void registerValidation(BREObjectSFDC breObjectSFDC, String orderID, String checkName, String checkType, String checkResult, Boolean header) {
         
         Validation validation = new Validation();
         validation.setOrderID(orderID);
@@ -15,5 +10,8 @@ function void registerValidation(BREObjectSFDC breObjectSFDC, String orderID, St
         validation.setHeader(header);
         validation.setCheckDate(LocalDate.now());
         breObjectSFDC.getValidations().add(validation);
-}
+}*/
 
+function String hello(String name) {
+	return "Hello "+name+"!";
+}
