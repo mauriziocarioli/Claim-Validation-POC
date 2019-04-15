@@ -217,33 +217,47 @@
   <table>
     <entry>
       <string>$region</string>
-      <list/>
+      <list>
+        <string></string>
+      </list>
     </entry>
     <entry>
       <string>$max</string>
-      <list/>
+      <list>
+        <string>10000</string>
+      </list>
     </entry>
     <entry>
       <string>__ID_KOL_NAME__</string>
-      <list/>
-    </entry>
-    <entry>
-      <string>$area</string>
-      <list/>
+      <list>
+        <string>1</string>
+      </list>
     </entry>
     <entry>
       <string>$date</string>
-      <list/>
+      <list>
+        <string>&quot;2015/01/31&quot;</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$area</string>
+      <list>
+        <string></string>
+      </list>
     </entry>
     <entry>
       <string>$eligible</string>
-      <list/>
+      <list>
+        <string>true</string>
+      </list>
     </entry>
     <entry>
       <string>$min</string>
-      <list/>
+      <list>
+        <string>2000</string>
+      </list>
     </entry>
   </table>
-  <idCol>0</idCol>
-  <rowsCount>0</rowsCount>
+  <idCol>1</idCol>
+  <rowsCount>1</rowsCount>
 </rule>
