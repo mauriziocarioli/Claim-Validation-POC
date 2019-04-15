@@ -2,11 +2,11 @@
   <tableName>Validation - Minimum Threshold - Canada LAC SMB Total LineItem SRP 2015</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>50</width>
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>150</width>
   </descriptionCol>
   <metadataCols/>
   <attributeCols/>
@@ -40,7 +40,17 @@
     <entries/>
   </auditLog>
   <imports>
-    <imports/>
+    <imports>
+      <org.kie.soup.project.datamodel.imports.Import>
+        <type>net.citrite.pip.sfdc.Order</type>
+      </org.kie.soup.project.datamodel.imports.Import>
+      <org.kie.soup.project.datamodel.imports.Import>
+        <type>net.citrite.pip.sfdc.OrderLineItem</type>
+      </org.kie.soup.project.datamodel.imports.Import>
+      <org.kie.soup.project.datamodel.imports.Import>
+        <type>net.citrite.pip.sfdc.OrderHeader</type>
+      </org.kie.soup.project.datamodel.imports.Import>
+    </imports>
   </imports>
   <packageName>net.citrite.pip.claim_validation_poc</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
