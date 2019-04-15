@@ -1,9 +1,12 @@
 package net.citrite.pip.claim_validation_poc;
 
-import java.lang.Number;
+import net.citrite.pip.canonical.bre.BREObjectSFDC;
+import net.citrite.pip.sfdc.Request;
+import net.citrite.pip.sfdc.Order;
 
 rule "Is Follow On Order"
 	dialect "mvel"
 	when
+		BREObjectSFDC( )
 	then
 end
