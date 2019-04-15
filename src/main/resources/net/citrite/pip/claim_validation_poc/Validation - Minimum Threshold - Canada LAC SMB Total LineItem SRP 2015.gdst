@@ -33,6 +33,17 @@
           <parameters/>
           <binding></binding>
         </condition-column52>
+        <condition-column52>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>ID</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>order_ID</factField>
+          <fieldType>String</fieldType>
+          <operator>!= null</operator>
+          <parameters/>
+          <binding>orderId</binding>
+        </condition-column52>
       </conditions>
       <window>
         <parameters/>
@@ -153,8 +164,91 @@
       </window>
       <entryPointName></entryPointName>
     </Pattern52>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>BRE</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.FactPattern>
+          <factType>BREObjectSFDC</factType>
+          <boundName>bre</boundName>
+          <isNegated>false</isNegated>
+          <window>
+            <parameters/>
+          </window>
+        </org.drools.workbench.models.datamodel.rule.FactPattern>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>BRE</header>
+          <constraintValueType>1</constraintValueType>
+          <fieldType>Boolean</fieldType>
+          <parameters/>
+          <varName></varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
   </conditionPatterns>
-  <actionCols/>
+  <actionCols>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>Validation</header>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.ActionCallMethod>
+          <fieldValues>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
+              <field>registerValidation</field>
+              <nature>0</nature>
+              <type>String</type>
+              <method></method>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
+              <field>registerValidation</field>
+              <nature>0</nature>
+              <type>String</type>
+              <method></method>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
+              <field>registerValidation</field>
+              <nature>0</nature>
+              <type>String</type>
+              <method></method>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
+              <field>registerValidation</field>
+              <nature>0</nature>
+              <type>String</type>
+              <method></method>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
+              <field>registerValidation</field>
+              <value>true</value>
+              <nature>0</nature>
+              <type>Boolean</type>
+              <method></method>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
+          </fieldValues>
+          <variable>bre</variable>
+          <state>1</state>
+          <methodName>registerValidation</methodName>
+        </org.drools.workbench.models.datamodel.rule.ActionCallMethod>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Validation</header>
+          <varName></varName>
+          <fieldType>Boolean</fieldType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+  </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
       <acceptedTypes>
@@ -196,6 +290,9 @@
       <org.kie.soup.project.datamodel.imports.Import>
         <type>net.citrite.pip.sfdc.EndUserInfo</type>
       </org.kie.soup.project.datamodel.imports.Import>
+      <org.kie.soup.project.datamodel.imports.Import>
+        <type>net.citrite.pip.canonical.bre.BREObjectSFDC</type>
+      </org.kie.soup.project.datamodel.imports.Import>
     </imports>
   </imports>
   <packageName>net.citrite.pip.claim_validation_poc</packageName>
@@ -212,6 +309,12 @@
       <value>
         <valueString></valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -245,6 +348,18 @@
       <value>
         <valueString></valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
