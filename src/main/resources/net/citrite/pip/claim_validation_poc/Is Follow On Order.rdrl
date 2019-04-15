@@ -1,0 +1,9 @@
+package net.citrite.pip.claim_validation_poc;
+
+import java.lang.Number;
+
+rule "Is Follow On Order"
+	dialect "mvel"
+	when
+	then
+end
