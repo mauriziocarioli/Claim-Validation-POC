@@ -4,4 +4,4 @@
 
 #[then]Register Validation with {bre} for {orderId} as "{name}" "{type}" "{result}" at {header} = modify( {bre} ){ registerValidation({orderId}, "{name}", "{type}", "{result}", {header}) }
 
-[then]Register Validation with {bre} for {orderId} as "{name}" "{type}" "{result}" at {header} = {bre}.registerValidation({orderId}, "{name}", "{type}", "{result}", {header});
+#[then]Register Validation with {bre} for {orderId} as "{name}" "{type}" "{result}" at {header} = {bre}.registerValidation({orderId}, "{name}", "{type}", "{result}", {header});
