@@ -28,6 +28,9 @@
       <import>
         <type>java.time.temporal.ChronoUnit</type>
       </import>
+      <import>
+        <type>net.citrite.pip.bre.Validation</type>
+      </import>
     </imports>
   </imports>
   <version>1.0</version>
