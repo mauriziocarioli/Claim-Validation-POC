@@ -1,6 +1,8 @@
 package net.citrite.pip.claim_validation_poc;
 
+import java.util.Date;
 import java.time.LocalDate;
+import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
 import net.citrite.pip.canonical.bre.BREObjectSFDC;
 import net.citrite.pip.bre.Validation;
@@ -16,8 +18,8 @@ public final class Helper implements java.io.Serializable {
     private Helper() {
     }
     
-    public static long daysBetweenDates(LocalDate firstDate, LocalDate secondDate) {
-        return ChronoUnit.DAYS.between(firstDate, secondDate);
+    public static long daysBetweenDates(Date firstDate, Date secondDate) {
+        return ChronoUnit.DAYS.between(firstDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate(), secondDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate());
     }
     
     public static void registerValidation(BREObjectSFDC breObjectSFDC, String orderID, String checkName, String checkType, String checkResult, Boolean header) {
@@ -28,7 +30,7 @@ public final class Helper implements java.io.Serializable {
         validation.setCheckType(checkType);
         validation.setCheckResult(checkResult);
         validation.setHeader(header);
-        validation.setCheckDate(LocalDate.now());
+        validation.setCheckDate(new Date());
         breObjectSFDC.getValidations().add(validation);
     }
 
