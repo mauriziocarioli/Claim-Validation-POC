@@ -7,6 +7,6 @@ import net.citrite.pip.sfdc.Order;
 rule "Is Follow On Order"
 	dialect "mvel"
 	when
-		BREObjectSFDC( )
+		BREObjectSFDC( request.order.followOn == true )
 	then
 end
