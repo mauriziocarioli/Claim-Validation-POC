@@ -31,6 +31,9 @@
       <import>
         <type>net.citrite.pip.bre.Validation</type>
       </import>
+      <import>
+        <type>net.citrite.pip.canonical.bre.BREObjectSFDC</type>
+      </import>
     </imports>
   </imports>
   <version>1.0</version>
