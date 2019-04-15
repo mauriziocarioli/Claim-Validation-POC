@@ -8,8 +8,8 @@ import net.citrite.pip.canonical.bre.BREObjectSFDC;
 rule "Validation - 30 days"
 	dialect "mvel"
 	when
-		>RewardRegistration( d : initial_Submitted_Date)
-		>Order( orderHeader.order_Creation_Date < d , orderId : orderHeader.order_ID)
+		>BREObjectSFDC( d : request.rewardRegistration.initial_Submitted_Date)
+		>BREObjectSFDC( request.order.orderHeader.order_Creation_Date < d , orderId : request.order.orderHeader.order_ID)
 		>bre : BREObjectSFDC( )
 	then
 		>bre.registerValidation( orderId, "Minimum Registration Timeline Unmet", "STANDARD", "FAIL", true );
