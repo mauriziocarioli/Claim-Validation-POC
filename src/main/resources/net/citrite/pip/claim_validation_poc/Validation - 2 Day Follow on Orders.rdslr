@@ -14,5 +14,4 @@ rule "Validation - 2 Day Follow on Orders"
 		>bre : BREObjectSFDC( )
 		>h : Helper( )
 	then
-		Register Validation with bre for orderId as "Minimum Follow Order Timeline Unmet" "STANDARD" "FAIL" at true
 end
