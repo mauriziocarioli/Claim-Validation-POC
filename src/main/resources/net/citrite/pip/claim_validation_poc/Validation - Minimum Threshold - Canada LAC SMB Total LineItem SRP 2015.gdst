@@ -34,7 +34,7 @@
           <binding></binding>
         </condition-column52>
         <condition-column52>
-          <hideColumn>false</hideColumn>
+          <hideColumn>true</hideColumn>
           <width>100</width>
           <header>ID</header>
           <constraintValueType>1</constraintValueType>
@@ -63,7 +63,7 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>Created When</header>
+          <header>Created &gt;= #</header>
           <constraintValueType>1</constraintValueType>
           <factField>order_Creation_Date</factField>
           <fieldType>Comparable</fieldType>
@@ -165,7 +165,7 @@
       <entryPointName></entryPointName>
     </Pattern52>
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-      <hideColumn>false</hideColumn>
+      <hideColumn>true</hideColumn>
       <width>-1</width>
       <header>BRE</header>
       <constraintValueType>1</constraintValueType>
@@ -182,7 +182,7 @@
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
+          <hideColumn>true</hideColumn>
           <width>100</width>
           <header>BRE</header>
           <constraintValueType>1</constraintValueType>
@@ -193,7 +193,7 @@
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-      <hideColumn>false</hideColumn>
+      <hideColumn>true</hideColumn>
       <width>-1</width>
       <header>Validation</header>
       <constraintValueType>1</constraintValueType>
@@ -210,7 +210,7 @@
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
+          <hideColumn>true</hideColumn>
           <width>100</width>
           <header>Validation</header>
           <constraintValueType>1</constraintValueType>
