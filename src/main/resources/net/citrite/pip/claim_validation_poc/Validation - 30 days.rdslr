@@ -8,13 +8,6 @@ rule "Validation - 30 days"
 	dialect "mvel"
 	when
 		>RewardRegistration( d : initial_Submitted_Date)
-		>Order( orderHeader.order_Creation_Date < d )
-		>v : Validation( )
+		>Order( orderHeader.order_Creation_Date < d , orderId : orderHeader.order_ID)
 	then
-		>modify( v ) {
-				>setCheckName( "Minimum Registration Timeline Unmet" ), 
-				>setCheckType( "STANDARD" ), 
-				>setCheckResult( "FAIL" ), 
-				>setHeader( true )
-		>}
 end
