@@ -161,7 +161,7 @@
         </org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
         <org.drools.workbench.models.datamodel.rule.ActionFieldFunction>
           <field>registerValidation</field>
-          <value>@{name}</value>
+          <value>$name</value>
           <nature>3</nature>
           <type>String</type>
           <method></method>
