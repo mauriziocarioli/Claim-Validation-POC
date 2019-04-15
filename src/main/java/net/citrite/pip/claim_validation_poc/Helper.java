@@ -21,9 +21,9 @@ public final class Helper implements java.io.Serializable {
     }
     
     public static void registerValidation(BREObjectSFDC breObjectSFDC, String checkName, String checkType, String checkResult, Boolean header) {
-        validation = new Validation();
+        Validation validation = new Validation();
         validation.setCheckName(checkName);
-        validation.setCheckType(chekType);
+        validation.setCheckType(checkType);
         validation.setCheckResult(checkResult);
         validation.setHeader(header);
         validation.setCheckDate(LocalDate.now());
