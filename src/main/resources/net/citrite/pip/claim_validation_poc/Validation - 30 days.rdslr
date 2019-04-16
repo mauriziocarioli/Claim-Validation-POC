@@ -5,11 +5,11 @@ import net.citrite.pip.sfdc.RewardRegistration;
 import net.citrite.pip.bre.Validation;
 import net.citrite.pip.canonical.bre.BREObjectSFDC;
 
-rule "Validation - 30 days"
+rule "Validation - 30 days" extends "Is Follow On Order"
 	dialect "mvel"
 	when
 		>BREObjectSFDC( d : request.rewardRegistration.initial_Submitted_Date)
-		>BREObjectSFDC( request.order.orderHeader.order_Creation_Date < d , orderId : request.order.orderHeader.order_ID)
+		>BREObjectSFDC( request.order.orderHeader.order_Creation_Date < ( d ) , orderId : request.order.orderHeader.order_ID)
 		>bre : BREObjectSFDC( )
 	then
 		>bre.registerValidation( orderId, "Minimum Registration Timeline Unmet", "STANDARD", "FAIL", true );
