@@ -1,13 +1,14 @@
 package citrite;
 
+import java.time.temporal.ChronoUnit;
+
 rule "Validation - 2 Day Follow on Orders" extends "Is Follow On Order"
 	dialect "mvel"
 	when
 		>BREObjectSFDC( orderId : request.order.orderHeader.order_ID)
 		>bre : BREObjectSFDC( )
-		>BREObjectSFDC(
-		>d1 : request.order.orderHeader.order_Creation_Date, 
-		>d2 : request.originalOrder.creation_Date,  
+		>BREObjectSFDC(d1: request.order.orderHeader.order_Creation_Date, 
+		>d2 : request.originalOrder.creation_Date, 
 		>ChronoUnit.DAYS.between(d1.toInstant().atZone(ZoneId.systemDefault()).toLocalDate(), d2.toInstant().atZone(ZoneId.systemDefault()).toLocalDate()) > 2)
 	then
 		>bre.registerValidation( orderId, "Minimum Follow On Order Timeline Unmet", "STANDARD", "FAIL", true );
