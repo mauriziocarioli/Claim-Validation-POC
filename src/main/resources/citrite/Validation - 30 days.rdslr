@@ -6,5 +6,5 @@ rule "Validation - 30 days"
 		>BREObjectSFDC( d : request.rewardRegistration.initial_Submitted_Date, request.order.orderHeader.order_Creation_Date < ( d ) , orderId : request.order.orderHeader.order_ID)
 		>bre : BREObjectSFDC( )
 	then
-		bre.registerValidation( orderId, "Minimum Registration Timeline Unmet", "STANDARD", "FAIL", true );
+		>bre.registerValidation( orderId, "Minimum Registration Timeline Unmet", "STANDARD", "FAIL", true );
 end
