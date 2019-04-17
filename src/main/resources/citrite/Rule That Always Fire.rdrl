@@ -7,4 +7,5 @@ rule "Rule That Always Fire"
 	when
 		eval(true)
 	then
+		System.out.println("DROOLS|Claim-Validation-POC> executing rule: "+drools.getRule().getName());
 end
