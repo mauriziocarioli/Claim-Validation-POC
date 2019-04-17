@@ -7,4 +7,5 @@ rule "Validation - 30 days"
 		>bre : BREObjectSFDC( )
 	then
 		>bre.registerValidation( orderId, "Minimum Registration Timeline Unmet", "STANDARD", "FAIL", true );
+		>System.out.println("DROOLS|Claim-Validation-POC> executing rule: "+drools.getRule().getName());
 end
