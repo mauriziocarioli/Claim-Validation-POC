@@ -1,10 +1,5 @@
 package net.citrite.pip.claim_validation_poc;
 
-import net.citrite.pip.sfdc.Order;
-import net.citrite.pip.sfdc.RewardRegistration;
-import net.citrite.pip.bre.Validation;
-import net.citrite.pip.canonical.bre.BREObjectSFDC;
-
 rule "Validation - 30 days" extends "Is Follow On Order"
 	dialect "mvel"
 	when

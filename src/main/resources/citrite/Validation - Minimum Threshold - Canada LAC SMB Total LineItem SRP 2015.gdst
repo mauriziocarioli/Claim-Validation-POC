@@ -522,22 +522,22 @@
   <imports>
     <imports>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>net.citrite.pip.canonical.bre.BREObjectSFDC</type>
+        <type>citrite.BREObjectSFDC</type>
       </org.kie.soup.project.datamodel.imports.Import>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>net.citrite.pip.sfdc.Request</type>
+        <type>citrite.Request</type>
       </org.kie.soup.project.datamodel.imports.Import>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>net.citrite.pip.sfdc.Order</type>
+        <type>citrite.Order</type>
       </org.kie.soup.project.datamodel.imports.Import>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>net.citrite.pip.sfdc.OrderHeader</type>
+        <type>citrite.OrderHeader</type>
       </org.kie.soup.project.datamodel.imports.Import>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>net.citrite.pip.sfdc.OrderLineItem</type>
+        <type>citrite.OrderLineItem</type>
       </org.kie.soup.project.datamodel.imports.Import>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>net.citrite.pip.sfdc.EndUserInfo</type>
+        <type>citrite.EndUserInfo</type>
       </org.kie.soup.project.datamodel.imports.Import>
     </imports>
   </imports>
