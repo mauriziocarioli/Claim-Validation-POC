@@ -4,8 +4,8 @@ rule "Validation - 2 Day Follow on Orders"
 	dialect "mvel"
 	when
 		>BREObjectSFDC( d2 : request.originalOrder.creation_Date, d1 : request.order.orderHeader.order_Creation_Date, orderId : request.order.orderHeader.order_ID)
-		>bre : BREObjectSFDC( )
 		Days between d1 and d2 are greater than 2
+		>bre : BREObjectSFDC( )
 	then
 		>bre.registerValidation( orderId, "Minimum Follow On Order Timeline Unmet", "STANDARD", "FAIL", true );
 end
