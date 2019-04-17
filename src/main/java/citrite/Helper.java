@@ -1,6 +1,7 @@
 package citrite;
 
 import java.util.Date;
+import java.util.ArrayList;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
@@ -23,7 +24,7 @@ public final class Helper implements java.io.Serializable {
     public static void registerValidation(BREObjectSFDC breObjectSFDC, String orderID, String checkName, String checkType, String checkResult, Boolean header) {
         
         if (breObjectSFDC.getValidations() == null) {
-            breObjectSFDC.setValidations(new Validations())
+            breObjectSFDC.setValidations(new ArrayList<Validation>());
         }
         
         Validation validation = new Validation();
@@ -36,6 +37,7 @@ public final class Helper implements java.io.Serializable {
         validation.setCheckDate(new Date());
         
         breObjectSFDC.getValidations().add(validation);
+        
     }
 
 }
