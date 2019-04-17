@@ -28,6 +28,9 @@
       <import>
         <type>java.time.temporal.ChronoUnit</type>
       </import>
+      <import>
+        <type>java.time.ZoneId</type>
+      </import>
     </imports>
   </imports>
   <version>1.0</version>
