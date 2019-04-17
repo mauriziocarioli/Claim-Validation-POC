@@ -1,0 +1,9 @@
+package citrite;
+
+import java.lang.Number;
+
+rule "Log Input Data"
+	dialect "mvel"
+	when
+	then
+end
