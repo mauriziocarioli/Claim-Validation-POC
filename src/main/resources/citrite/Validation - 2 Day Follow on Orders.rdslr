@@ -8,4 +8,5 @@ rule "Validation - 2 Day Follow on Orders" extends "Is Follow On Order"
 		>bre : BREObjectSFDC( )
 	then
 		>bre.registerValidation( orderId, "Minimum Follow On Order Timeline Unmet", "STANDARD", "FAIL", true );
+		>System.out.println("DROOLS|Claim-Validation-POC> executing rule: "+drools.getRule().getName());
 end
