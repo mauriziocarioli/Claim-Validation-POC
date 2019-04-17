@@ -1,0 +1,15 @@
+<org.uberfire.java.nio.base.Properties serialization="custom">
+  <unserializable-parents/>
+  <map>
+    <default>
+      <loadFactor>0.75</loadFactor>
+      <threshold>12</threshold>
+    </default>
+    <int>16</int>
+    <int>1</int>
+    <string>dcore.description[0]</string>
+    <string>&lt;Order_Creation_Date&gt;2019-02-15T00:00:00&lt;/Order_Creation_Date&gt;
+&lt;Initial_Submitted_Date&gt;2019-02-16T00:00:00&lt;/Initial_Submitted_Date&gt;
+</string>
+  </map>
+</org.uberfire.java.nio.base.Properties>
