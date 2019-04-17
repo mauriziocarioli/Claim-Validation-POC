@@ -1,4 +1,4 @@
-package net.citrite.pip.claim_validation_poc;
+package citrite;
 
 rule "Validation - 30 days"
 	dialect "mvel"
@@ -6,6 +6,7 @@ rule "Validation - 30 days"
 		BREObjectSFDC( d : request.rewardRegistration.initial_Submitted_Date)
 		BREObjectSFDC( request.order.orderHeader.order_Creation_Date < ( d ) , orderId : request.order.orderHeader.order_ID)
 		bre : BREObjectSFDC( )
+		>BREObjectSFDC( d : request.rewardRegistration.initial_Submitted_Date)
 	then
 		bre.registerValidation( orderId, "Minimum Registration Timeline Unmet", "STANDARD", "FAIL", true );
 end
