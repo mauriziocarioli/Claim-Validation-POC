@@ -1,6 +1,6 @@
 package citrite;
 
-rule "Validation - 2 Day Follow on Orders"
+rule "Validation - 2 Day Follow on Orders" extends "Is Follow On Order"
 	dialect "mvel"
 	when
 		>BREObjectSFDC( d2 : request.originalOrder.creation_Date, d1 : request.order.orderHeader.order_Creation_Date, orderId : request.order.orderHeader.order_ID)
