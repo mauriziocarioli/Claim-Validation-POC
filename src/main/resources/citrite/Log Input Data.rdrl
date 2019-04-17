@@ -5,8 +5,8 @@ import java.lang.Number;
 rule "Log Input Data"
 	dialect "mvel"
 	when
-		bre : BREObjectSFDC( )
+		bre : BREObjectSFDC( orderCreationDate : request.order.orderHeader.order_Creation_Date, initialSubmittedDate : request.rewardRegistration.initial_Submitted_Date)
 	then
-		System.out.println("DROOLS|Claim-Validation-POC> order creation date:                            "+bre.getRequest().getOrder().getOrderHeader().getOrderCreationDate());
-		System.out.println("DROOLS|Claim-Validation-POC> registration initial submitted date:  "+bre.getRequest().getRewardRegistration().getInitial_Submitted_Date());
+		System.out.println("DROOLS|Claim-Validation-POC> order creation date:                            "+orderCreationDate);
+		System.out.println("DROOLS|Claim-Validation-POC> registration initial submitted date:  "+initialSubmittedDate);
 end
