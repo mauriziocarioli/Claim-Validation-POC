@@ -1,0 +1,9 @@
+package citrite;
+
+import java.lang.Number;
+
+rule "Rule That Always Fire"
+	dialect "mvel"
+	when
+	then
+end
