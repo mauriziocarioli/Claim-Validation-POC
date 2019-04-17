@@ -7,4 +7,6 @@ rule "Log Input Data"
 	when
 		bre : BREObjectSFDC( )
 	then
+		System.out.println("DROOLS|Claim-Validation-POC> order creation date:                            "+bre.getRequest().getOrder().getOrderHeader().getOrderCreationDate());
+		System.out.println("DROOLS|Claim-Validation-POC> registration initial submitted date:  "+bre.getRequest().getRewardRegistration().getInitial_Submitted_Date());
 end
