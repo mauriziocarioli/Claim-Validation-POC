@@ -22,13 +22,19 @@ public final class Helper implements java.io.Serializable {
     
     public static void registerValidation(BREObjectSFDC breObjectSFDC, String orderID, String checkName, String checkType, String checkResult, Boolean header) {
         
+        if (breObjectSFDC.getValidations() == null) {
+            breObjectSFDC.setValidations(new Validations())
+        }
+        
         Validation validation = new Validation();
+        
         validation.setOrderID(orderID);
         validation.setCheckName(checkName);
         validation.setCheckType(checkType);
         validation.setCheckResult(checkResult);
         validation.setHeader(header);
         validation.setCheckDate(new Date());
+        
         breObjectSFDC.getValidations().add(validation);
     }
 
