@@ -1,6 +1,6 @@
 package net.citrite.pip.claim_validation_poc;
 
-rule "Validation - 30 days" extends "Is Follow On Order"
+rule "Validation - 30 days"
 	dialect "mvel"
 	when
 		BREObjectSFDC( d : request.rewardRegistration.initial_Submitted_Date)
