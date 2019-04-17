@@ -1,0 +1,9 @@
+package citrite;
+
+import java.lang.Number;
+
+rule "BRE does not exist"
+	dialect "mvel"
+	when
+	then
+end
