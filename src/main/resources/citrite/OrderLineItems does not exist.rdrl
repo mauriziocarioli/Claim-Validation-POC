@@ -5,5 +5,7 @@ import java.lang.Number;
 rule "OrderLineItems does not exist"
 	dialect "mvel"
 	when
+		not (OrderLineItem( )) 
 	then
+		System.out.println("DROOLS|Claim-Validation-POC> executing rule: "+drools.getRule().getName());
 end
