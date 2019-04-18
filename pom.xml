@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>citrite</groupId>
   <artifactId>Claim-Validation-POC</artifactId>
-  <version>1.1.5-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>kjar</packaging>
   <name>Claim-Validation-POC</name>
   <description></description>

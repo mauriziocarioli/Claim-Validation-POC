@@ -360,5 +360,5 @@
 		</object>
 	</insert>
 	<fire-all-rules out-identifier="firedActivations" />
-	<dispose/>
+	<dispose />
 </batch-execution>
