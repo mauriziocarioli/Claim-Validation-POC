@@ -11,5 +11,5 @@ rule "Log Input Data"
 		System.out.println("DROOLS|Claim-Validation-POC> original order creation date:             "+creationDate);
 		System.out.println("DROOLS|Claim-Validation-POC> order creation date:                            "+orderCreationDate);
 		System.out.println("DROOLS|Claim-Validation-POC> registration initial submitted date:  "+initialSubmittedDate);
-		System.out.println("DROOLS|Claim-Validation-POC> registration initial submitted date:  "+ChronoUnit.DAYS.between(creationDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate(), orderCreationDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate() ))
+		System.out.println("DROOLS|Claim-Validation-POC> days between original order creation date and order creation date:  "+ChronoUnit.DAYS.between(creationDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate(), orderCreationDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate() ))
 end
