@@ -1,0 +1,1017 @@
+{
+	"info": {
+		"_postman_id": "10d8e69c-037d-43a0-bdef-acb29004c29d",
+		"name": "Citrix POC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "XML (original)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "kieserver1!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "kieserver",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<batch-execution>\n    <insert out-identifier=\"BREObjectSFDC\" return-object=\"true\">\n        <ns7:BREObjectSFDC \n    xmlns:ns7=\"urn:schemas-citrite-net:pip:canonical:bre:1\" \n    xmlns:ns2=\"urn:schemas-citrite-net:pip:bre:payout:1\" \n    xmlns:ns8=\"urn:schemas-citrite-net:pip:sfdc:enduser:1\" \n    xmlns:ns1=\"urn:schemas-citrite-net:pip:bre:validations:1\"\n    xmlns:ns4=\"urn:schemas-citrite-net:pip:bre:characteristics:1\" \n    xmlns:ns9=\"urn:schemas-citrite-net:pip:sfdc:partnerfunctions:1\" \n    xmlns:ns16=\"urn:schemas-citrite-net:pip:salesforce:salesexception:1\" \n    xmlns:ns10=\"urn:schemas-citrite-net:pip:sfdc:order:1\" \n    xmlns:ns11=\"urn:schemas-citrite-net:pip:sfdc:originalorder:1\"\n    xmlns:ns12=\"urn:schemas-citrite-net:pip:sfdc:partnerInfo:1\" \n    xmlns:ns13=\"urn:schemas-citrite-net:pip:sfdc:registration:1\" \n    xmlns:ns6=\"urn:schemas-citrite-net:pip:bre:enduser:1\" \n    xmlns:ns14=\"urn:schemas-citrite-net:pip:salesforce:product-authorization:1\" \n    xmlns:ns3=\"urn:schemas-citrite-net:pip:sfdc:val-calc-info:1\"\n    xmlns:ns0=\"urn:schemas-citrite-net:pip:sfdc:val-calc-request:1\" \n    xmlns:ns15=\"urn:schemas-citrite-net:pip:salesforce:specialization:1\" \n    xmlns:ns5=\"urn:schemas-citrite-net:pip:bre:productrelease:1\" \n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n            <ns0:Request>\n                <ns10:Order>\n                    <OrderHeader>\n                        <Order_Type>Z003</Order_Type>\n                        <Order_ID>0002541033</Order_ID>\n                        <Order_Amount>7128.15</Order_Amount>\n                        <Award_Type>null</Award_Type>\n                        <Contract_Type>null</Contract_Type>\n                        <Contract_Level>null</Contract_Level>\n                        <Contract_No>null</Contract_No>\n                        <Order_Creation_Date>2019-02-15T00:00:00</Order_Creation_Date>\n                        <Order_Matched_Date>2019-02-15T09:54:01</Order_Matched_Date>\n                        <Matched_Registration_ID>Rwd-0896848</Matched_Registration_ID>\n                        <Shared_Reward_Flag>false</Shared_Reward_Flag>\n                        <New_Customer_Flag>false</New_Customer_Flag>\n                        <PO_Date>2019-02-15T00:00:00</PO_Date>\n                        <PO_Number>test_NFD_SMB_02</PO_Number>\n                        <Valdidation_Status>null</Valdidation_Status>\n                        <Failure_Reasons   />\n                        <Total_Partner_Eligible_Amount>0.0</Total_Partner_Eligible_Amount>\n                        <Total_Promo_Amount>0.0</Total_Promo_Amount>\n                        <Total_Base_Amount>0.0</Total_Base_Amount>\n                        <OrderDiscounts/>\n                        <Distribution_Channel>05</Distribution_Channel>\n                    </OrderHeader>\n                    <OrderLineItems>\n                        <OrderLineItem>\n                            <Order_ID>0002541033</Order_ID>\n                            <OrderLine_ID>OLI-00491693</OrderLine_ID>\n                            <Product_Type>Software</Product_Type>\n                            <Edition>STANDARD</Edition>\n                            <SKU_Marketing>000000000004034076</SKU_Marketing>\n                            <Product_Line_ID>5118</Product_Line_ID>\n                            <Discount_Program>0.00</Discount_Program>\n                            <Discount_Channel>0.00</Discount_Channel>\n                            <Discount_Program_Amount>0.00</Discount_Program_Amount>\n                            <SRP_USD>700.00</SRP_USD>\n                            <SRP_Order_Currency>700.00</SRP_Order_Currency>\n                            <Quantity>10</Quantity>\n                            <Partner_Incentive_Eligible_Flag>false</Partner_Incentive_Eligible_Flag>\n                            <Partner_Eligible>false</Partner_Eligible>\n                            <Failure_Reasons>null</Failure_Reasons>\n                            <Cert_Required_Flag>true</Cert_Required_Flag>\n                            <Profit_Center>0001000200</Profit_Center>\n                            <AAG>V1</AAG>\n                            <Partner_Eligible_Amount>0.0</Partner_Eligible_Amount>\n                            <Promo_Amount>0.0</Promo_Amount>\n                            <Base_Amount>0.0</Base_Amount>\n                            <Partner_Incentive_Group>X</Partner_Incentive_Group>\n                            <TransitionPath>X</TransitionPath>\n                            <OrderDiscounts/>\n                            <Purchase_Type>12</Purchase_Type>\n                            <RTM_Material>4</RTM_Material>\n                            <StrategicProgramsPromos>X</StrategicProgramsPromos>\n                            <Billing_Frequency>null</Billing_Frequency>\n                        </OrderLineItem>\n                        <OrderLineItem>\n                            <Order_ID>0002541033</Order_ID>\n                            <OrderLine_ID>OLI-00491694</OrderLine_ID>\n                            <Product_Type>Software</Product_Type>\n                            <Edition>STANDARD</Edition>\n                            <SKU_Marketing>000000000003013050</SKU_Marketing>\n                            <Product_Line_ID>5118</Product_Line_ID>\n                            <Discount_Program>0.00</Discount_Program>\n                            <Discount_Channel>0.00</Discount_Channel>\n                            <Discount_Program_Amount>0.00</Discount_Program_Amount>\n                            <SRP_USD>3050.00</SRP_USD>\n                            <SRP_Order_Currency>3050.00</SRP_Order_Currency>\n                            <Quantity>10</Quantity>\n                            <Partner_Incentive_Eligible_Flag>true</Partner_Incentive_Eligible_Flag>\n                            <Partner_Eligible>false</Partner_Eligible>\n                            <Failure_Reasons>null</Failure_Reasons>\n                            <Cert_Required_Flag>true</Cert_Required_Flag>\n                            <Profit_Center>0001000200</Profit_Center>\n                            <AAG>A1</AAG>\n                            <Partner_Eligible_Amount>0.0</Partner_Eligible_Amount>\n                            <Promo_Amount>0.0</Promo_Amount>\n                            <Base_Amount>0.0</Base_Amount>\n                            <Partner_Incentive_Group>X</Partner_Incentive_Group>\n                            <TransitionPath>X</TransitionPath>\n                            <OrderDiscounts/>\n                            <Purchase_Type>4</Purchase_Type>\n                            <RTM_Material>4</RTM_Material>\n                            <StrategicProgramsPromos>X</StrategicProgramsPromos>\n                            <Billing_Frequency>null</Billing_Frequency>\n                        </OrderLineItem>\n                        <OrderLineItem>\n                            <Order_ID>0002541033</Order_ID>\n                            <OrderLine_ID>OLI-00491695</OrderLine_ID>\n                            <Product_Type>Software</Product_Type>\n                            <Edition>FEATURE</Edition>\n                            <SKU_Marketing>000000000003016825</SKU_Marketing>\n                            <Product_Line_ID>5214</Product_Line_ID>\n                            <Discount_Program>0.00</Discount_Program>\n                            <Discount_Channel>0.00</Discount_Channel>\n                            <Discount_Program_Amount>0.00</Discount_Program_Amount>\n                            <SRP_USD>3378.15</SRP_USD>\n                            <SRP_Order_Currency>3378.15</SRP_Order_Currency>\n                            <Quantity>15</Quantity>\n                            <Partner_Incentive_Eligible_Flag>true</Partner_Incentive_Eligible_Flag>\n                            <Partner_Eligible>false</Partner_Eligible>\n                            <Failure_Reasons>null</Failure_Reasons>\n                            <Cert_Required_Flag>true</Cert_Required_Flag>\n                            <Profit_Center>0001000429</Profit_Center>\n                            <AAG>Z1</AAG>\n                            <Partner_Eligible_Amount>0.0</Partner_Eligible_Amount>\n                            <Promo_Amount>0.0</Promo_Amount>\n                            <Base_Amount>0.0</Base_Amount>\n                            <Partner_Incentive_Group>X</Partner_Incentive_Group>\n                            <TransitionPath>X</TransitionPath>\n                            <OrderDiscounts/>\n                            <Purchase_Type>4</Purchase_Type>\n                            <RTM_Material>4</RTM_Material>\n                            <StrategicProgramsPromos>X</StrategicProgramsPromos>\n                            <Billing_Frequency>null</Billing_Frequency>\n                        </OrderLineItem>\n                    </OrderLineItems>\n                </ns10:Order>\n                <ns13:RewardRegistration>\n                    <Registration_ID>Rwd-0896848</Registration_ID>\n                    <Incentive_Type>Citrix Ultimate Rewards</Incentive_Type>\n                    <Reward_Submitted_Date>2019-02-12T09:24:12</Reward_Submitted_Date>\n                    <BackendApplicable_Flag>false</BackendApplicable_Flag>\n                    <FrontendApplicable_Flag>false</FrontendApplicable_Flag>\n                    <Initial_Submitted_Date>2019-02-15T00:00:00</Initial_Submitted_Date>\n                </ns13:RewardRegistration>\n                <ns12:PartnerInfo>\n                    <Tags>\n                        <TagID>PTN-115228</TagID>\n                        <TagName>S-PAM: AMS</TagName>\n                    </Tags>\n                    <Partner_Type>CSN</Partner_Type>\n                    <Partner_Level>PLATINUM</Partner_Level>\n                    <Partner_Status>Current</Partner_Status>\n                    <Partner_Geo>Americas</Partner_Geo>\n                    <Partner_Area>Americas SMB Sales</Partner_Area>\n                    <Partner_Region>US Small Business</Partner_Region>\n                    <Partner_Territory>Central/West SMB</Partner_Territory>\n                    <Partner_Compliance>Compliant</Partner_Compliance>\n                    <Partner_Mship_Start_Date>2018-02-06T12:00:00</Partner_Mship_Start_Date>\n                    <Partner_Mship_End_Date>2019-02-28T12:00:00</Partner_Mship_End_Date>\n                    <Partner_Mship_Inception_Date>1996-03-15T12:00:00</Partner_Mship_Inception_Date>\n                </ns12:PartnerInfo>\n                <ns9:PartnerFunctions>\n                    <BillTo_Partner_Name>XYZ Org</BillTo_Partner_Name>\n                    <BillTo_Address_Line1>Billing Address Line 1</BillTo_Address_Line1>\n                    <BillTo_Address_Line2>Billing Address Line 2</BillTo_Address_Line2>\n                    <BillTo_City>Billing City</BillTo_City>\n                    <BillTo_State>Billing State</BillTo_State>\n                    <BillTo_Country>null</BillTo_Country>\n                    <BillTo_Postal_Code>111111</BillTo_Postal_Code>\n                    <BillTo_District>Billing District</BillTo_District>\n                    <BillTo_Email_Address>null</BillTo_Email_Address>\n                    <BillTo_User_Country_Code>null</BillTo_User_Country_Code>\n                    <SoldTo_Partner_Name>XYZ Org</SoldTo_Partner_Name>\n                    <SoldTo_Address_Line1>Sold to Line 1</SoldTo_Address_Line1>\n                    <SoldTo_Address_Line2>22222</SoldTo_Address_Line2>\n                    <SoldTo_City>Soldto City</SoldTo_City>\n                    <SoldTo_State>Sold to State</SoldTo_State>\n                    <SoldTo_Country>US</SoldTo_Country>\n                    <SoldTo_Postal_Code>02155</SoldTo_Postal_Code>\n                    <SoldTo_District>District</SoldTo_District>\n                    <SoldTo_Email_Address>null</SoldTo_Email_Address>\n                    <SoldTo_User_Country_Code>null</SoldTo_User_Country_Code>\n                    <ShipTo_Partner_Name>Shipto APrtner</ShipTo_Partner_Name>\n                    <ShipTo_Address_Line1>ShipTo_Address_Line1</ShipTo_Address_Line1>\n                    <ShipTo_Address_Line2>null</ShipTo_Address_Line2>\n                    <ShipTo_City>zxc</ShipTo_City>\n                    <ShipTo_State>za</ShipTo_State>\n                    <ShipTo_Country>US</ShipTo_Country>\n                    <ShipTo_Postal_Code>\n                    </ShipTo_Postal_Code>\n                    <ShipTo_District>null</ShipTo_District>\n                    <ShipTo_Email_Address>null</ShipTo_Email_Address>\n                    <ShipTo_User_Country_Code>null</ShipTo_User_Country_Code>\n                </ns9:PartnerFunctions>\n                <ns11:OriginalOrder>\n                    <Creation_Date>0001-01-01T00:00:00</Creation_Date>\n                    <PO_Date>0001-01-01T00:00:00</PO_Date>\n                    <Document_Date>0001-01-01T00:00:00</Document_Date>\n                </ns11:OriginalOrder>\n                <ns16:SalesExceptions/>\n                <ns14:ProductAuthorizations>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5246</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5256</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5258</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5257</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5132</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5118</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5174</Product_Line_ID>\n                        <Cert_Status>Authorized</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5147</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5175</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5158</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5143</Product_Line_ID>\n                        <Cert_Status>Authorized</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5203</Product_Line_ID>\n                        <Cert_Status>Authorized</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5206</Product_Line_ID>\n                        <Cert_Status>Authorized</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5225</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5140</Product_Line_ID>\n                        <Cert_Status>Authorized</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5208</Product_Line_ID>\n                        <Cert_Status>Authorized</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5215</Product_Line_ID>\n                        <Cert_Status>Authorized</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5213</Product_Line_ID>\n                        <Cert_Status>Authorized</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5214</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5219</Product_Line_ID>\n                        <Cert_Status>Authorized</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5243</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5249</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5255</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5205</Product_Line_ID>\n                        <Cert_Status>Authorized</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5210</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5191</Product_Line_ID>\n                        <Cert_Status>Authorized</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5253</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5250</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5251</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                    <AuthorizationItem>\n                        <Product_Line_ID>5252</Product_Line_ID>\n                        <Cert_Status>Certified</Cert_Status>\n                    </AuthorizationItem>\n                </ns14:ProductAuthorizations>\n                <ns8:EndUserInfo>\n                    <End_User_Org_ID>51535787</End_User_Org_ID>\n                    <End_User_Geo>Americas</End_User_Geo>\n                    <End_User_Area>Americas SMB, Mid-Market, &amp; Renewal Sales</End_User_Area>\n                    <End_User_Territory>US Northeast MB</End_User_Territory>\n                    <End_User_Region>US North MB1</End_User_Region>\n                    <End_User_Email_Address>dreher@shelton-cook.com</End_User_Email_Address>\n                    <High_Touch_Flag>false</High_Touch_Flag>\n                </ns8:EndUserInfo>\n                <ns15:Specializations>\n                    <Specialization>\n                        <SystemName>Virtualization</SystemName>\n                        <Status>Active</Status>\n                        <BRE_Status>Not Achieved</BRE_Status>\n                        <AddData>\n                            <Key>Award Date</Key>\n                            <Value>2015-06-15 00:00:00</Value>\n                        </AddData>\n                    </Specialization>\n                    <Specialization>\n                        <SystemName>NetworkingforApps&amp;MobileSecurity</SystemName>\n                        <Status>Active</Status>\n                        <BRE_Status>Not Achieved</BRE_Status>\n                        <AddData>\n                            <Key>Award Date</Key>\n                            <Value>2015-06-24 00:00:00</Value>\n                        </AddData>\n                    </Specialization>\n                    <Specialization>\n                        <SystemName>NetworkingforDataCenter</SystemName>\n                        <Status>Active</Status>\n                        <BRE_Status>Not Achieved</BRE_Status>\n                        <AddData>\n                            <Key>Award Date</Key>\n                            <Value>2015-08-28 00:00:00</Value>\n                        </AddData>\n                    </Specialization>\n                    <Specialization>\n                        <SystemName>MobileManagement</SystemName>\n                        <Status>Active</Status>\n                        <BRE_Status>Not Achieved</BRE_Status>\n                        <AddData>\n                            <Key>Award Date</Key>\n                            <Value>2015-09-01 00:00:00</Value>\n                        </AddData>\n                    </Specialization>\n                </ns15:Specializations>\n            </ns0:Request>\n            <Validations  Status=\"VALID\" xmlns=\"urn:schemas-citrite-net:pip:bre:validations:1\">\n                <Validation  xmlns=\"\">\n                    <CheckName>Minimum Order Amount Requirement Unmet</CheckName>\n                    <CheckDate>2019-02-19T10:42:15.3465419-05:00</CheckDate>\n                    <CheckResult>FAIL</CheckResult>\n                    <Header>true</Header>\n                    <OrderID>0002541033</OrderID>\n                    <CheckType>EXCEPTION</CheckType>\n                    <MergedStatus>false</MergedStatus>\n                </Validation>\n            </Validations>\n            <Payout  xsi:nil=\"true\" xmlns=\"urn:schemas-citrite-net:pip:bre:payout:1\" />\n            <ns3:Info>\n                <Request_DateTime>2019-02-15T09:54:01</Request_DateTime>\n                <Response_DateTime>2019-02-15T09:54:01</Response_DateTime>\n                <Status/>\n                <Interaction_Id>533200ce-389e-1dd4-f187-929e22a40d26</Interaction_Id>\n                <Source>SFDC</Source>\n            </ns3:Info>\n        </ns7:BREObjectSFDC>\n    </insert>\n    <fire-all-rules out-identifier=\"firedActivations\"/>\n</batch-execution>"
+				},
+				"url": {
+					"raw": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation-POC_1.0.0",
+					"protocol": "http",
+					"host": [
+						"autoaws"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"Claim-Validation-POC_1.0.0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "XML (modified)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "kieserver1!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "kieserver",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<batch-execution lookup=\"citrite-default-ksession\">\r\n\t<insert out-identifier=\"BREObjectSFDC\" return-object=\"true\">\r\n\t\t<object xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n\t\t\txsi:type=\"breObjectSFDC\">\r\n\t\t\t<request>\r\n\t\t\t\t<order>\r\n\t\t\t\t\t<orderHeader>\r\n\t\t\t\t\t\t<order_Type>Z003</order_Type>\r\n\t\t\t\t\t\t<order_ID>0002541033</order_ID>\r\n\t\t\t\t\t\t<order_Amount>7128.15</order_Amount>\r\n\t\t\t\t\t\t<award_Type>null</award_Type>\r\n\t\t\t\t\t\t<contract_Type>null</contract_Type>\r\n\t\t\t\t\t\t<contract_Level>null</contract_Level>\r\n\t\t\t\t\t\t<contract_No>null</contract_No>\r\n\t\t\t\t\t\t<order_Creation_Date>2019-02-15T00:00:00</order_Creation_Date>\r\n\t\t\t\t\t\t<order_Matched_Date>2019-02-15T09:54:01</order_Matched_Date>\r\n\t\t\t\t\t\t<matched_Registration_ID>Rwd-0896848</matched_Registration_ID>\r\n\t\t\t\t\t\t<shared_Reward_Flag>false</shared_Reward_Flag>\r\n\t\t\t\t\t\t<new_Customer_Flag>false</new_Customer_Flag>\r\n\t\t\t\t\t\t<PO_Date>2019-02-15T00:00:00</PO_Date>\r\n\t\t\t\t\t\t<PO_Number>test_NFD_SMB_02</PO_Number>\r\n\t\t\t\t\t\t<validation_Status>null</validation_Status>\r\n\t\t\t\t\t\t<failure_Reasons />\r\n\t\t\t\t\t\t<total_Partner_Eligible_Amount>0.0</total_Partner_Eligible_Amount>\r\n\t\t\t\t\t\t<total_Promo_Amount>0.0</total_Promo_Amount>\r\n\t\t\t\t\t\t<total_Base_Amount>0.0</total_Base_Amount>\r\n\t\t\t\t\t\t<orderDiscounts />\r\n\t\t\t\t\t\t<distribution_Channel>05</distribution_Channel>\r\n\t\t\t\t\t</orderHeader>\r\n\t\t\t\t\t<orderLineItems>\r\n\t\t\t\t\t\t<order_ID>0002541033</order_ID>\r\n\t\t\t\t\t\t<orderLine_ID>OLI-00491693</orderLine_ID>\r\n\t\t\t\t\t\t<product_Type>Software</product_Type>\r\n\t\t\t\t\t\t<edition>STANDARD</edition>\r\n\t\t\t\t\t\t<sKU_Marketing>000000000004034076</sKU_Marketing>\r\n\t\t\t\t\t\t<product_Line_ID>5118</product_Line_ID>\r\n\t\t\t\t\t\t<discount_Program>0.00</discount_Program>\r\n\t\t\t\t\t\t<discount_Channel>0.00</discount_Channel>\r\n\t\t\t\t\t\t<discount_Program_Amount>0.00</discount_Program_Amount>\r\n\t\t\t\t\t\t<SRP_USD>700.00</SRP_USD>\r\n\t\t\t\t\t\t<sRP_Order_Currency>700.00</sRP_Order_Currency>\r\n\t\t\t\t\t\t<quantity>10</quantity>\r\n\t\t\t\t\t\t<partner_Incentive_Eligible_Flag>false\r\n\t\t\t\t\t\t</partner_Incentive_Eligible_Flag>\r\n\t\t\t\t\t\t<partner_Eligible>false</partner_Eligible>\r\n\t\t\t\t\t\t<failure_Reasons>null</failure_Reasons>\r\n\t\t\t\t\t\t<cert_Required_Flag>true</cert_Required_Flag>\r\n\t\t\t\t\t\t<profit_Center>0001000200</profit_Center>\r\n\t\t\t\t\t\t<aAG>V1</aAG>\r\n\t\t\t\t\t\t<partner_Eligible_Amount>0.0</partner_Eligible_Amount>\r\n\t\t\t\t\t\t<promo_Amount>0.0</promo_Amount>\r\n\t\t\t\t\t\t<base_Amount>0.0</base_Amount>\r\n\t\t\t\t\t\t<partner_Incentive_Group>X</partner_Incentive_Group>\r\n\t\t\t\t\t\t<transitionPath>X</transitionPath>\r\n\t\t\t\t\t\t<orderDiscounts />\r\n\t\t\t\t\t\t<purchase_Type>12</purchase_Type>\r\n\t\t\t\t\t\t<rTM_Material>4</rTM_Material>\r\n\t\t\t\t\t\t<strategicProgramsPromos>X</strategicProgramsPromos>\r\n\t\t\t\t\t\t<billing_Frequency>null</billing_Frequency>\r\n\t\t\t\t\t</orderLineItems>\r\n\t\t\t\t\t<orderLineItems>\r\n\t\t\t\t\t\t<order_ID>0002541033</order_ID>\r\n\t\t\t\t\t\t<orderLine_ID>OLI-00491694</orderLine_ID>\r\n\t\t\t\t\t\t<product_Type>Software</product_Type>\r\n\t\t\t\t\t\t<edition>STANDARD</edition>\r\n\t\t\t\t\t\t<sKU_Marketing>000000000003013050</sKU_Marketing>\r\n\t\t\t\t\t\t<product_Line_ID>5118</product_Line_ID>\r\n\t\t\t\t\t\t<discount_Program>0.00</discount_Program>\r\n\t\t\t\t\t\t<discount_Channel>0.00</discount_Channel>\r\n\t\t\t\t\t\t<discount_Program_Amount>0.00</discount_Program_Amount>\r\n\t\t\t\t\t\t<SRP_USD>3050.00</SRP_USD>\r\n\t\t\t\t\t\t<sRP_Order_Currency>3050.00</sRP_Order_Currency>\r\n\t\t\t\t\t\t<quantity>10</quantity>\r\n\t\t\t\t\t\t<partner_Incentive_Eligible_Flag>true\r\n\t\t\t\t\t\t</partner_Incentive_Eligible_Flag>\r\n\t\t\t\t\t\t<partner_Eligible>false</partner_Eligible>\r\n\t\t\t\t\t\t<failure_Reasons>null</failure_Reasons>\r\n\t\t\t\t\t\t<cert_Required_Flag>true</cert_Required_Flag>\r\n\t\t\t\t\t\t<profit_Center>0001000200</profit_Center>\r\n\t\t\t\t\t\t<aAG>A1</aAG>\r\n\t\t\t\t\t\t<partner_Eligible_Amount>0.0</partner_Eligible_Amount>\r\n\t\t\t\t\t\t<promo_Amount>0.0</promo_Amount>\r\n\t\t\t\t\t\t<base_Amount>0.0</base_Amount>\r\n\t\t\t\t\t\t<partner_Incentive_Group>X</partner_Incentive_Group>\r\n\t\t\t\t\t\t<transitionPath>X</transitionPath>\r\n\t\t\t\t\t\t<orderDiscounts />\r\n\t\t\t\t\t\t<purchase_Type>4</purchase_Type>\r\n\t\t\t\t\t\t<rTM_Material>4</rTM_Material>\r\n\t\t\t\t\t\t<strategicProgramsPromos>X</strategicProgramsPromos>\r\n\t\t\t\t\t\t<billing_Frequency>null</billing_Frequency>\r\n\t\t\t\t\t</orderLineItems>\r\n\t\t\t\t\t<orderLineItems>\r\n\t\t\t\t\t\t<order_ID>0002541033</order_ID>\r\n\t\t\t\t\t\t<orderLine_ID>OLI-00491695</orderLine_ID>\r\n\t\t\t\t\t\t<product_Type>Software</product_Type>\r\n\t\t\t\t\t\t<edition>FEATURE</edition>\r\n\t\t\t\t\t\t<sKU_Marketing>000000000003016825</sKU_Marketing>\r\n\t\t\t\t\t\t<product_Line_ID>5214</product_Line_ID>\r\n\t\t\t\t\t\t<discount_Program>0.00</discount_Program>\r\n\t\t\t\t\t\t<discount_Channel>0.00</discount_Channel>\r\n\t\t\t\t\t\t<discount_Program_Amount>0.00</discount_Program_Amount>\r\n\t\t\t\t\t\t<SRP_USD>3378.15</SRP_USD>\r\n\t\t\t\t\t\t<sRP_Order_Currency>3378.15</sRP_Order_Currency>\r\n\t\t\t\t\t\t<quantity>15</quantity>\r\n\t\t\t\t\t\t<partner_Incentive_Eligible_Flag>true\r\n\t\t\t\t\t\t</partner_Incentive_Eligible_Flag>\r\n\t\t\t\t\t\t<partner_Eligible>false</partner_Eligible>\r\n\t\t\t\t\t\t<failure_Reasons>null</failure_Reasons>\r\n\t\t\t\t\t\t<cert_Required_Flag>true</cert_Required_Flag>\r\n\t\t\t\t\t\t<profit_Center>0001000429</profit_Center>\r\n\t\t\t\t\t\t<aAG>Z1</aAG>\r\n\t\t\t\t\t\t<partner_Eligible_Amount>0.0</partner_Eligible_Amount>\r\n\t\t\t\t\t\t<promo_Amount>0.0</promo_Amount>\r\n\t\t\t\t\t\t<base_Amount>0.0</base_Amount>\r\n\t\t\t\t\t\t<partner_Incentive_Group>X</partner_Incentive_Group>\r\n\t\t\t\t\t\t<transitionPath>X</transitionPath>\r\n\t\t\t\t\t\t<orderDiscounts />\r\n\t\t\t\t\t\t<purchase_Type>4</purchase_Type>\r\n\t\t\t\t\t\t<rTM_Material>4</rTM_Material>\r\n\t\t\t\t\t\t<strategicProgramsPromos>X</strategicProgramsPromos>\r\n\t\t\t\t\t\t<billing_Frequency>null</billing_Frequency>\r\n\t\t\t\t\t</orderLineItems>\r\n\t\t\t\t</order>\r\n\t\t\t\t<rewardRegistration>\r\n\t\t\t\t\t<registration_ID>Rwd-0896848</registration_ID>\r\n\t\t\t\t\t<incentive_Type>Citrix Ultimate Rewards</incentive_Type>\r\n\t\t\t\t\t<reward_Submitted_Date>2019-02-12T09:24:12</reward_Submitted_Date>\r\n\t\t\t\t\t<backendApplicable_Flag>false</backendApplicable_Flag>\r\n\t\t\t\t\t<frontendApplicable_Flag>false</frontendApplicable_Flag>\r\n\t\t\t\t\t<initial_Submitted_Date>2019-02-16T00:00:00\r\n\t\t\t\t\t</initial_Submitted_Date>\r\n\t\t\t\t</rewardRegistration>\r\n\t\t\t\t<partnerInfo>\r\n\t\t\t\t\t<tags>\r\n\t\t\t\t\t\t<tagID>PTN-115228</tagID>\r\n\t\t\t\t\t\t<tagName>S-PAM: AMS</tagName>\r\n\t\t\t\t\t</tags>\r\n\t\t\t\t\t<partner_Type>CSN</partner_Type>\r\n\t\t\t\t\t<partner_Level>PLATINUM</partner_Level>\r\n\t\t\t\t\t<partner_Status>Current</partner_Status>\r\n\t\t\t\t\t<partner_Geo>Americas</partner_Geo>\r\n\t\t\t\t\t<partner_Area>Americas SMB Sales</partner_Area>\r\n\t\t\t\t\t<partner_Region>US Small Business</partner_Region>\r\n\t\t\t\t\t<partner_Territory>Central/West SMB</partner_Territory>\r\n\t\t\t\t\t<partner_Compliance>Compliant</partner_Compliance>\r\n\t\t\t\t\t<partner_Mship_Start_Date>2018-02-06T12:00:00\r\n\t\t\t\t\t</partner_Mship_Start_Date>\r\n\t\t\t\t\t<partner_Mship_End_Date>2019-02-28T12:00:00\r\n\t\t\t\t\t</partner_Mship_End_Date>\r\n\t\t\t\t\t<partner_Mship_Inception_Date>1996-03-15T12:00:00\r\n\t\t\t\t\t</partner_Mship_Inception_Date>\r\n\t\t\t\t</partnerInfo>\r\n\t\t\t\t<partnerFunctions>\r\n\t\t\t\t\t<billTo_Partner_Name>XYZ Org</billTo_Partner_Name>\r\n\t\t\t\t\t<billTo_Address_Line1>Billing Address Line 1</billTo_Address_Line1>\r\n\t\t\t\t\t<billTo_Address_Line2>Billing Address Line 2</billTo_Address_Line2>\r\n\t\t\t\t\t<billTo_City>Billing City</billTo_City>\r\n\t\t\t\t\t<billTo_State>Billing State</billTo_State>\r\n\t\t\t\t\t<billTo_Country>null</billTo_Country>\r\n\t\t\t\t\t<billTo_Postal_Code>111111</billTo_Postal_Code>\r\n\t\t\t\t\t<billTo_District>Billing District</billTo_District>\r\n\t\t\t\t\t<billTo_Email_Address>null</billTo_Email_Address>\r\n\t\t\t\t\t<billTo_User_Country_Code>null</billTo_User_Country_Code>\r\n\t\t\t\t\t<soldTo_Partner_Name>XYZ Org</soldTo_Partner_Name>\r\n\t\t\t\t\t<soldTo_Address_Line1>Sold to Line 1</soldTo_Address_Line1>\r\n\t\t\t\t\t<soldTo_Address_Line2>22222</soldTo_Address_Line2>\r\n\t\t\t\t\t<soldTo_City>Soldto City</soldTo_City>\r\n\t\t\t\t\t<soldTo_State>Sold to State</soldTo_State>\r\n\t\t\t\t\t<soldTo_Country>US</soldTo_Country>\r\n\t\t\t\t\t<soldTo_Postal_Code>02155</soldTo_Postal_Code>\r\n\t\t\t\t\t<soldTo_District>District</soldTo_District>\r\n\t\t\t\t\t<soldTo_Email_Address>null</soldTo_Email_Address>\r\n\t\t\t\t\t<soldTo_User_Country_Code>null</soldTo_User_Country_Code>\r\n\t\t\t\t\t<shipTo_Partner_Name>Shipto APrtner</shipTo_Partner_Name>\r\n\t\t\t\t\t<shipTo_Address_Line1>ShipTo_Address_Line1</shipTo_Address_Line1>\r\n\t\t\t\t\t<shipTo_Address_Line2>null</shipTo_Address_Line2>\r\n\t\t\t\t\t<shipTo_City>zxc</shipTo_City>\r\n\t\t\t\t\t<shipTo_State>za</shipTo_State>\r\n\t\t\t\t\t<shipTo_Country>US</shipTo_Country>\r\n\t\t\t\t\t<shipTo_Postal_Code />\r\n\t\t\t\t\t<shipTo_District>null</shipTo_District>\r\n\t\t\t\t\t<shipTo_Email_Address>null</shipTo_Email_Address>\r\n\t\t\t\t\t<shipTo_User_Country_Code>null</shipTo_User_Country_Code>\r\n\t\t\t\t</partnerFunctions>\r\n\t\t\t\t<originalOrder>\r\n\t\t\t\t\t<creation_Date>2019-02-10T00:00:00</creation_Date>\r\n\t\t\t\t\t<pO_Date>0001-01-01T00:00:00</pO_Date>\r\n\t\t\t\t\t<document_Date>0001-01-01T00:00:00</document_Date>\r\n\t\t\t\t</originalOrder>\r\n\t\t\t\t<salesExceptions />\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5246</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5256</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5258</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5257</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5132</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5118</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5174</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Authorized</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5147</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5175</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5158</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5143</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Authorized</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5203</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Authorized</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5206</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Authorized</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5225</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5140</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Authorized</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5208</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Authorized</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5215</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Authorized</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5213</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Authorized</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5214</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5219</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Authorized</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5243</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5249</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5255</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5205</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Authorized</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5210</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5191</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Authorized</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5253</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5250</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5251</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<productAuthorizations>\r\n\t\t\t\t\t<product_Line_ID>5252</product_Line_ID>\r\n\t\t\t\t\t<cert_Status>Certified</cert_Status>\r\n\t\t\t\t</productAuthorizations>\r\n\t\t\t\t<endUserInfo>\r\n\t\t\t\t\t<end_User_Org_ID>51535787</end_User_Org_ID>\r\n\t\t\t\t\t<end_User_Geo>Americas</end_User_Geo>\r\n\t\t\t\t\t<end_User_Area>Americas SMB, Mid-Market, &amp; Renewal Sales\r\n\t\t\t\t\t</end_User_Area>\r\n\t\t\t\t\t<end_User_Territory>US Northeast MB</end_User_Territory>\r\n\t\t\t\t\t<end_User_Region>US North MB</end_User_Region>\r\n\t\t\t\t\t<end_User_Email_Address>dreher@shelton-cook.com\r\n\t\t\t\t\t</end_User_Email_Address>\r\n\t\t\t\t\t<High_Touch_Flag>false</High_Touch_Flag>\r\n\t\t\t\t</endUserInfo>\r\n\t\t\t\t<specializations>\r\n\t\t\t\t\t<systemName>Virtualization</systemName>\r\n\t\t\t\t\t<status>Active</status>\r\n\t\t\t\t\t<bRE_Status>Not Achieved</bRE_Status>\r\n\t\t\t\t\t<addData>\r\n\t\t\t\t\t\t<Key>Award Date</Key>\r\n\t\t\t\t\t\t<value>2015-06-15 00:00:00</value>\r\n\t\t\t\t\t</addData>\r\n\t\t\t\t</specializations>\r\n\t\t\t\t<specializations>\r\n\t\t\t\t\t<systemName>NetworkingforApps&amp;MobileSecurity</systemName>\r\n\t\t\t\t\t<status>Active</status>\r\n\t\t\t\t\t<bRE_Status>Not Achieved</bRE_Status>\r\n\t\t\t\t\t<addData>\r\n\t\t\t\t\t\t<Key>Award Date</Key>\r\n\t\t\t\t\t\t<value>2015-06-24 00:00:00</value>\r\n\t\t\t\t\t</addData>\r\n\t\t\t\t</specializations>\r\n\t\t\t\t<specializations>\r\n\t\t\t\t\t<systemName>NetworkingforDataCenter</systemName>\r\n\t\t\t\t\t<status>Active</status>\r\n\t\t\t\t\t<bRE_Status>Not Achieved</bRE_Status>\r\n\t\t\t\t\t<addData>\r\n\t\t\t\t\t\t<Key>Award Date</Key>\r\n\t\t\t\t\t\t<value>2015-08-28 00:00:00</value>\r\n\t\t\t\t\t</addData>\r\n\t\t\t\t</specializations>\r\n\t\t\t\t<specializations>\r\n\t\t\t\t\t<systemName>MobileManagement</systemName>\r\n\t\t\t\t\t<status>Active</status>\r\n\t\t\t\t\t<bRE_Status>Not Achieved</bRE_Status>\r\n\t\t\t\t\t<addData>\r\n\t\t\t\t\t\t<Key>Award Date</Key>\r\n\t\t\t\t\t\t<value>2015-09-01 00:00:00</value>\r\n\t\t\t\t\t</addData>\r\n\t\t\t\t</specializations>\r\n\t\t\t</request>\r\n\t\t</object>\r\n\t</insert>\r\n\t<fire-all-rules out-identifier=\"firedActivations\" />\r\n\t<dispose/>\r\n</batch-execution>"
+				},
+				"url": {
+					"raw": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation-POC_1.0.0-SNAPSHOT",
+					"protocol": "http",
+					"host": [
+						"autoaws"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"Claim-Validation-POC_1.0.0-SNAPSHOT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "XML (original) Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "kieserver1!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "kieserver",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<batch-execution>\n    <insert out-identifier=\"EndUserInfo\" return-object=\"true\">\n                <ns8:EndUserInfo xmlns:ns8=\"urn:schemas-citrite-net:pip:sfdc:enduser:1\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n                    <End_User_Org_ID>51535787</End_User_Org_ID>\n                    <End_User_Geo>Americas</End_User_Geo>\n                    <End_User_Area>Americas SMB, Mid-Market, &amp; Renewal Sales</End_User_Area>\n                    <End_User_Territory>US Northeast MB</End_User_Territory>\n                    <End_User_Region>US North MB1</End_User_Region>\n                    <End_User_Email_Address>dreher@shelton-cook.com</End_User_Email_Address>\n                    <High_Touch_Flag>false</High_Touch_Flag>\n                </ns8:EndUserInfo>\n    </insert>\n    <fire-all-rules out-identifier=\"firedActivations\"/>\n</batch-execution>"
+				},
+				"url": {
+					"raw": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation-XML_jboss-1.0.0-SNAPSHOT",
+					"protocol": "http",
+					"host": [
+						"autoaws"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"Claim-Validation-XML_jboss-1.0.0-SNAPSHOT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "XML (original) Copy Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "kieserver1!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "kieserver",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<batch-execution>\n    <insert out-identifier=\"EndUserInfo\" return-object=\"true\">\n                <EndUserInfo xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"  xsi:type=\"citrite.EndUserInfo\">\n                    <End_User_Org_ID>51535787</End_User_Org_ID>\n                    <End_User_Geo>Americas</End_User_Geo>\n                    <End_User_Area>Americas SMB, Mid-Market, &amp; Renewal Sales</End_User_Area>\n                    <End_User_Territory>US Northeast MB</End_User_Territory>\n                    <End_User_Region>US North MB1</End_User_Region>\n                    <End_User_Email_Address>dreher@shelton-cook.com</End_User_Email_Address>\n                    <High_Touch_Flag>false</High_Touch_Flag>\n                </EndUserInfo>\n    </insert>\n    <fire-all-rules out-identifier=\"firedActivations\"/>\n</batch-execution>"
+				},
+				"url": {
+					"raw": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation-XML_jboss-1.0.0-SNAPSHOT",
+					"protocol": "http",
+					"host": [
+						"autoaws"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"Claim-Validation-XML_jboss-1.0.0-SNAPSHOT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "XML insert simple object (original)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "kieserver1!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "kieserver",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<batch-execution>\n    <insert out-identifier=\"Info\" return-object=\"true\">\n        <object xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:type=\"net.citrite.pip.sfdc.Info\">\n        <ns3:Info \n    xmlns:ns3=\"urn:schemas-citrite-net:pip:sfdc:val-calc-info:1\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n            <Request_DateTime>2019-02-15T09:54:01</Request_DateTime>\n            <Response_DateTime>2019-02-15T09:54:01</Response_DateTime>\n            <Status/>\n            <Interaction_Id>533200ce-389e-1dd4-f187-929e22a40d26</Interaction_Id>\n            <Source>SFDC</Source>\n        </ns3:Info>\n    </insert>\n    <fire-all-rules out-identifier=\"firedActivations\"/>\n</batch-execution>"
+				},
+				"url": {
+					"raw": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation-POC_1.0.0-SNAPSHOT",
+					"protocol": "http",
+					"host": [
+						"autoaws"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"Claim-Validation-POC_1.0.0-SNAPSHOT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "XML insert simple object camelBack",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "kieserver1!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "kieserver",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<batch-execution>\n    <insert out-identifier=\"Info\" return-object=\"true\">\n        <object xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:type=\"net.citrite.pip.sfdc.Info\">\n            <request_DateTime>2019-02-15T09:54:01</request_DateTime>\n            <response_DateTime>2019-02-15T09:54:01</response_DateTime>\n            <status/>\n            <interaction_Id>533200ce-389e-1dd4-f187-929e22a40d26</interaction_Id>\n            <source>SFDC</source>\n        </object>\n    </insert>\n    <fire-all-rules out-identifier=\"firedActivations\"/>\n</batch-execution>"
+				},
+				"url": {
+					"raw": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation-POC_1.0.0-SNAPSHOT",
+					"protocol": "http",
+					"host": [
+						"autoaws"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"Claim-Validation-POC_1.0.0-SNAPSHOT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "XML insert simple object CamelBack",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "kieserver1!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "kieserver",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<batch-execution>\n    <insert out-identifier=\"Info\" return-object=\"true\">\n        <object xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:type=\"net.citrite.pip.sfdc.Info\">\n            <Request_DateTime>2019-02-15T09:54:01</Request_DateTime>\n            <Response_DateTime>2019-02-15T09:54:01</Response_DateTime>\n            <Status/>\n            <Interaction_Id>533200ce-389e-1dd4-f187-929e22a40d26</Interaction_Id>\n            <Source>SFDC</Source>\n        </object>\n    </insert>\n    <fire-all-rules out-identifier=\"firedActivations\"/>\n</batch-execution>"
+				},
+				"url": {
+					"raw": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation-POC_1.0.0",
+					"protocol": "http",
+					"host": [
+						"autoaws"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"Claim-Validation-POC_1.0.0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "json camelBack",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "kieserver1!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "kieserver",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lookup\": \"citrite-default-ksession\",\n    \"commands\": [\n        {\n            \"insert\": {\n                \"object\": {\n                    \"citrite.BREObjectSFDC\": {\n                        \"request\": {\n                            \"order\": {\n                                \"orderHeader\": {\n                                    \"order_Type\": \"Z003\",\n                                    \"order_ID\": \"0002541033\",\n                                    \"order_Amount\": \"7128.15\",\n                                    \"award_Type\": \"null\",\n                                    \"contract_Type\": \"null\",\n                                    \"contract_Level\": \"null\",\n                                    \"contract_No\": \"null\",\n                                    \"order_Creation_Date\": \"2019-02-15T00:00:00\",\n                                    \"order_Matched_Date\": \"2019-02-15T09:54:01\",\n                                    \"matched_Registration_ID\": \"Rwd-0896848\",\n                                    \"shared_Reward_Flag\": \"false\",\n                                    \"new_Customer_Flag\": \"false\",\n                                    \"PO_Date\": \"2019-02-15T00:00:00\",\n                                    \"PO_Number\": \"test_NFD_SMB_02\",\n                                    \"validation_Status\": \"null\",\n                                    \"failure_Reasons\": \"\",\n                                    \"total_Partner_Eligible_Amount\": \"0.0\",\n                                    \"total_Promo_Amount\": \"0.0\",\n                                    \"total_Base_Amount\": \"0.0\",\n                                    \"orderDiscounts\": \"\",\n                                    \"distribution_Channel\": \"05\"\n                                },\n                                \"orderLineItems\": [\n                                    {\n                                        \"order_ID\": \"0002541033\",\n                                        \"orderLine_ID\": \"OLI-00491693\",\n                                        \"product_Type\": \"Software\",\n                                        \"edition\": \"STANDARD\",\n                                        \"sKU_Marketing\": \"000000000004034076\",\n                                        \"product_Line_ID\": \"5118\",\n                                        \"discount_Program\": \"0.00\",\n                                        \"discount_Channel\": \"0.00\",\n                                        \"discount_Program_Amount\": \"0.00\",\n                                        \"srp_USD\": \"700.00\",\n                                        \"srp_Order_Currency\": \"700.00\",\n                                        \"quantity\": \"10\",\n                                        \"partner_Incentive_Eligible_Flag\": \"false\",\n                                        \"partner_Eligible\": \"false\",\n                                        \"failure_Reasons\": \"null\",\n                                        \"cert_Required_Flag\": \"true\",\n                                        \"profit_Center\": \"0001000200\",\n                                        \"aAG\": \"V1\",\n                                        \"partner_Eligible_Amount\": \"0.0\",\n                                        \"promo_Amount\": \"0.0\",\n                                        \"base_Amount\": \"0.0\",\n                                        \"partner_Incentive_Group\": \"X\",\n                                        \"transitionPath\": \"X\",\n                                        \"orderDiscounts\": \"\",\n                                        \"purchase_Type\": \"12\",\n                                        \"rTM_Material\": \"4\",\n                                        \"strategicProgramsPromos\": \"X\",\n                                        \"billing_Frequency\": \"null\"\n                                    },\n                                    {\n                                        \"order_ID\": \"0002541033\",\n                                        \"orderLine_ID\": \"OLI-00491694\",\n                                        \"product_Type\": \"Software\",\n                                        \"edition\": \"STANDARD\",\n                                        \"sKU_Marketing\": \"000000000003013050\",\n                                        \"product_Line_ID\": \"5118\",\n                                        \"discount_Program\": \"0.00\",\n                                        \"discount_Channel\": \"0.00\",\n                                        \"discount_Program_Amount\": \"0.00\",\n                                        \"srp_USD\": \"3050.00\",\n                                        \"srp_Order_Currency\": \"3050.00\",\n                                        \"quantity\": \"10\",\n                                        \"partner_Incentive_Eligible_Flag\": \"true\",\n                                        \"partner_Eligible\": \"false\",\n                                        \"failure_Reasons\": \"null\",\n                                        \"cert_Required_Flag\": \"true\",\n                                        \"profit_Center\": \"0001000200\",\n                                        \"aAG\": \"A1\",\n                                        \"partner_Eligible_Amount\": \"0.0\",\n                                        \"promo_Amount\": \"0.0\",\n                                        \"base_Amount\": \"0.0\",\n                                        \"partner_Incentive_Group\": \"X\",\n                                        \"transitionPath\": \"X\",\n                                        \"orderDiscounts\": \"\",\n                                        \"purchase_Type\": \"4\",\n                                        \"rTM_Material\": \"4\",\n                                        \"strategicProgramsPromos\": \"X\",\n                                        \"billing_Frequency\": \"null\"\n                                    },\n                                    {\n                                        \"order_ID\": \"0002541033\",\n                                        \"orderLine_ID\": \"OLI-00491695\",\n                                        \"product_Type\": \"Software\",\n                                        \"edition\": \"FEATURE\",\n                                        \"sKU_Marketing\": \"000000000003016825\",\n                                        \"product_Line_ID\": \"5214\",\n                                        \"discount_Program\": \"0.00\",\n                                        \"discount_Channel\": \"0.00\",\n                                        \"discount_Program_Amount\": \"0.00\",\n                                        \"srp_USD\": \"3378.15\",\n                                        \"srp_Order_Currency\": \"3378.15\",\n                                        \"quantity\": \"15\",\n                                        \"partner_Incentive_Eligible_Flag\": \"true\",\n                                        \"partner_Eligible\": \"false\",\n                                        \"failure_Reasons\": \"null\",\n                                        \"cert_Required_Flag\": \"true\",\n                                        \"profit_Center\": \"0001000429\",\n                                        \"aAG\": \"Z1\",\n                                        \"partner_Eligible_Amount\": \"0.0\",\n                                        \"promo_Amount\": \"0.0\",\n                                        \"base_Amount\": \"0.0\",\n                                        \"partner_Incentive_Group\": \"X\",\n                                        \"transitionPath\": \"X\",\n                                        \"orderDiscounts\": \"\",\n                                        \"purchase_Type\": \"4\",\n                                        \"rTM_Material\": \"4\",\n                                        \"strategicProgramsPromos\": \"X\",\n                                        \"billing_Frequency\": \"null\"\n                                    }\n                                ]\n                            },\n                            \"rewardRegistration\": {\n                                \"registration_ID\": \"Rwd-0896848\",\n                                \"incentive_Type\": \"Citrix Ultimate Rewards\",\n                                \"reward_Submitted_Date\": \"2019-02-12T09:24:12\",\n                                \"backendApplicable_Flag\": \"false\",\n                                \"frontendApplicable_Flag\": \"false\",\n                                \"initial_Submitted_Date\": \"2019-02-16T00:00:00\"\n                            },\n                            \"partnerInfo\": {\n                                \"tags\": {\n                                    \"tagID\": \"PTN-115228\",\n                                    \"tagName\": \"S-PAM: AMS\"\n                                },\n                                \"partner_Type\": \"CSN\",\n                                \"partner_Level\": \"PLATINUM\",\n                                \"partner_Status\": \"Current\",\n                                \"partner_Geo\": \"Americas\",\n                                \"partner_Area\": \"Americas SMB Sales\",\n                                \"partner_Region\": \"US Small Business\",\n                                \"partner_Territory\": \"Central/West SMB\",\n                                \"partner_Compliance\": \"Compliant\",\n                                \"partner_Mship_Start_Date\": \"2018-02-06T12:00:00\",\n                                \"partner_Mship_End_Date\": \"2019-02-28T12:00:00\",\n                                \"partner_Mship_Inception_Date\": \"1996-03-15T12:00:00\"\n                            },\n                            \"partnerFunctions\": {\n                                \"billTo_Partner_Name\": \"XYZ Org\",\n                                \"billTo_Address_Line1\": \"Billing Address Line 1\",\n                                \"billTo_Address_Line2\": \"Billing Address Line 2\",\n                                \"billTo_City\": \"Billing City\",\n                                \"billTo_State\": \"Billing State\",\n                                \"billTo_Country\": \"null\",\n                                \"billTo_Postal_Code\": \"111111\",\n                                \"billTo_District\": \"Billing District\",\n                                \"billTo_Email_Address\": \"null\",\n                                \"billTo_User_Country_Code\": \"null\",\n                                \"soldTo_Partner_Name\": \"XYZ Org\",\n                                \"soldTo_Address_Line1\": \"Sold to Line 1\",\n                                \"soldTo_Address_Line2\": \"22222\",\n                                \"soldTo_City\": \"Soldto City\",\n                                \"soldTo_State\": \"Sold to State\",\n                                \"soldTo_Country\": \"US\",\n                                \"soldTo_Postal_Code\": \"02155\",\n                                \"soldTo_District\": \"District\",\n                                \"soldTo_Email_Address\": \"null\",\n                                \"soldTo_User_Country_Code\": \"null\",\n                                \"shipTo_Partner_Name\": \"Shipto APrtner\",\n                                \"shipTo_Address_Line1\": \"ShipTo_Address_Line1\",\n                                \"shipTo_Address_Line2\": \"null\",\n                                \"shipTo_City\": \"zxc\",\n                                \"shipTo_State\": \"za\",\n                                \"shipTo_Country\": \"US\",\n                                \"shipTo_Postal_Code\": \"\",\n                                \"shipTo_District\": \"null\",\n                                \"shipTo_Email_Address\": \"null\",\n                                \"shipTo_User_Country_Code\": \"null\"\n                            },\n                            \"originalOrder\": {\n                                \"creation_Date\": \"2019-02-10T00:00:00\",\n                                \"pO_Date\": \"0001-01-01T00:00:00\",\n                                \"document_Date\": \"0001-01-01T00:00:00\"\n                            },\n                            \"salesExceptions\": \"\",\n                            \"productAuthorizations\": [\n                                {\n                                    \"product_Line_ID\": \"5246\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5256\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5258\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5257\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5132\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5118\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5174\",\n                                    \"cert_Status\": \"Authorized\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5147\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5175\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5158\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5143\",\n                                    \"cert_Status\": \"Authorized\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5203\",\n                                    \"cert_Status\": \"Authorized\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5206\",\n                                    \"cert_Status\": \"Authorized\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5225\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5140\",\n                                    \"cert_Status\": \"Authorized\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5208\",\n                                    \"cert_Status\": \"Authorized\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5215\",\n                                    \"cert_Status\": \"Authorized\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5213\",\n                                    \"cert_Status\": \"Authorized\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5214\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5219\",\n                                    \"cert_Status\": \"Authorized\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5243\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5249\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5255\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5205\",\n                                    \"cert_Status\": \"Authorized\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5210\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5191\",\n                                    \"cert_Status\": \"Authorized\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5253\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5250\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5251\",\n                                    \"cert_Status\": \"Certified\"\n                                },\n                                {\n                                    \"product_Line_ID\": \"5252\",\n                                    \"cert_Status\": \"Certified\"\n                                }\n                            ],\n                            \"endUserInfo\": {\n                                \"end_User_Org_ID\": \"51535787\",\n                                \"end_User_Geo\": \"Americas\",\n                                \"end_User_Area\": \"Americas SMB, Mid-Market, & Renewal Sales\",\n                                \"end_User_Territory\": \"US Northeast MB\",\n                                \"end_User_Region\": \"US North MB\",\n                                \"end_User_Email_Address\": \"dreher@shelton-cook.com\",\n                                \"High_Touch_Flag\": \"false\"\n                            },\n                            \"specializations\": [\n                                {\n                                    \"systemName\": \"Virtualization\",\n                                    \"status\": \"Active\",\n                                    \"bRE_Status\": \"Not Achieved\",\n                                    \"addData\": {\n                                        \"Key\": \"Award Date\",\n                                        \"value\": \"2015-06-15 00:00:00\"\n                                    }\n                                },\n                                {\n                                    \"systemName\": \"NetworkingforApps&MobileSecurity\",\n                                    \"status\": \"Active\",\n                                    \"bRE_Status\": \"Not Achieved\",\n                                    \"addData\": {\n                                        \"Key\": \"Award Date\",\n                                        \"value\": \"2015-06-24 00:00:00\"\n                                    }\n                                },\n                                {\n                                    \"systemName\": \"NetworkingforDataCenter\",\n                                    \"status\": \"Active\",\n                                    \"bRE_Status\": \"Not Achieved\",\n                                    \"addData\": {\n                                        \"Key\": \"Award Date\",\n                                        \"value\": \"2015-08-28 00:00:00\"\n                                    }\n                                },\n                                {\n                                    \"systemName\": \"MobileManagement\",\n                                    \"status\": \"Active\",\n                                    \"bRE_Status\": \"Not Achieved\",\n                                    \"addData\": {\n                                        \"Key\": \"Award Date\",\n                                        \"value\": \"2015-09-01 00:00:00\"\n                                    }\n                                }\n                            ]\n                        }\n                    }\n                },\n                \"out-identifier\": \"BREObjectSFDC\",\n                \"return-object\": true\n            }\n        },\n        {\n            \"fire-all-rules\": {\n                \"out-identifier\": \"firedActivations\"\n            }\n        },\n        {\n            \"dispose\": {}\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation-POC_1.0.0-SNAPSHOT",
+					"protocol": "http",
+					"host": [
+						"autoaws"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"Claim-Validation-POC_1.0.0-SNAPSHOT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert simple object with CamelBack attributes",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "kieserver1!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "kieserver",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"commands\": [\n        {\n            \"insert\": {\n                \"object\": {\n                    \"citrite.RewardRegistration\": {\n                        \"Registration_ID\": \"Rwd-0896848\",\n                        \"Incentive_Type\": \"Citrix Ultimate Rewards\",\n                        \"Reward_Submitted_Date\": \"2019-02-12T09:24:12\",\n                        \"BackendApplicable_Flag\": \"false\",\n                        \"FrontendApplicable_Flag\": \"false\",\n                        \"Initial_Submitted_Date\": \"2019-02-15T00:00:00\"\n                    }\n                },\n                \"out-identifier\": \"RewardRegistration\",\n                \"return-object\": true\n            }\n        },\n        {\n            \"fire-all-rules\": {}\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation-POC_1.0.0",
+					"protocol": "http",
+					"host": [
+						"autoaws"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"Claim-Validation-POC_1.0.0"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation_1.0.0-SNAPSHOT Copy Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"lookup\": \"citrite-default-ksession\",\n    \"commands\": [\n        {\n            \"insert\": {\n                \"object\": {\n                    \"net.citrite.pip.sfdc.RewardRegistration\": {\n                        \"Registration_ID\": \"Rwd-0896848\",\n                        \"Incentive_Type\": \"Citrix Ultimate Rewards\",\n                        \"Reward_Submitted_Date\": \"2019-02-12T09:24:12\",\n                        \"BackendApplicable_Flag\": \"false\",\n                        \"FrontendApplicable_Flag\": \"false\",\n                        \"Initial_Submitted_Date\": \"2019-02-15T00:00:00\"\n                    }\n                },\n                \"out-identifier\": \"RewardRegistration\",\n                \"return-object\": true\n            }\n        },\n        {\n            \"fire-all-rules\": {}\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation_1.0.0-SNAPSHOT",
+							"protocol": "http",
+							"host": [
+								"autoaws"
+							],
+							"port": "8080",
+							"path": [
+								"kie-server",
+								"services",
+								"rest",
+								"server",
+								"containers",
+								"instances",
+								"Claim-Validation_1.0.0-SNAPSHOT"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Undertow/1"
+						},
+						{
+							"key": "Server",
+							"value": "JBoss-EAP/7"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Apr 2019 15:32:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-KIE-ConversationId",
+							"value": "%27default-kie-server%27%3A%27Claim-Validation_1.0.0-SNAPSHOT%27%3A%27net.citrite.pip%3AClaim-Validation%3A1.0.0-SNAPSHOT%27%3A%27c9b51e10-0e37-4bf4-b07b-e98f3070d728%27"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "726"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"type\" : \"SUCCESS\",\n  \"msg\" : \"Container Claim-Validation_1.0.0-SNAPSHOT successfully called.\",\n  \"result\" : {\n    \"execution-results\" : {\n      \"results\" : [ {\n        \"value\" : {\"net.citrite.pip.sfdc.RewardRegistration\":{\n  \"incentive_Type\" : null,\n  \"reward_Submitted_Date\" : null,\n  \"backendApplicable_Flag\" : null,\n  \"frontendApplicable_Flag\" : null,\n  \"initial_Submitted_Date\" : null,\n  \"registration_ID\" : null\n}},\n        \"key\" : \"RewardRegistration\"\n      } ],\n      \"facts\" : [ {\n        \"value\" : {\"org.drools.core.common.DefaultFactHandle\":{\n  \"external-form\" : \"0:1:688978935:688978935:1:DEFAULT:NON_TRAIT:net.citrite.pip.sfdc.RewardRegistration\"\n}},\n        \"key\" : \"RewardRegistration\"\n      } ]\n    }\n  }\n}"
+				}
+			]
+		},
+		{
+			"name": "insert simple object with camelBack attributes",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "kieserver1!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "kieserver",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"commands\": [\n        {\n            \"insert\": {\n                \"object\": {\n                    \"citrite.RewardRegistration\": {\n                        \"registration_ID\": \"Rwd-0896848\",\n                        \"incentive_Type\": \"Citrix Ultimate Rewards\",\n                        \"reward_Submitted_Date\": \"2019-02-12T09:24:12\",\n                        \"backendApplicable_Flag\": \"false\",\n                        \"frontendApplicable_Flag\": \"false\",\n                        \"initial_Submitted_Date\": \"2019-02-15T00:00:00\"\n                    }\n                },\n                \"out-identifier\": \"RewardRegistration\",\n                \"return-object\": true\n            }\n        },\n        {\n            \"fire-all-rules\": {}\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation-POC_1.0.0",
+					"protocol": "http",
+					"host": [
+						"autoaws"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"Claim-Validation-POC_1.0.0"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation_1.0.0-SNAPSHOT Copy Copy Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"lookup\": \"citrite-default-ksession\",\n    \"commands\": [\n        {\n            \"insert\": {\n                \"object\": {\n                    \"net.citrite.pip.sfdc.RewardRegistration\": {\n                        \"registration_ID\": \"Rwd-0896848\",\n                        \"incentive_Type\": \"Citrix Ultimate Rewards\",\n                        \"reward_Submitted_Date\": \"2019-02-12T09:24:12\",\n                        \"backendApplicable_Flag\": \"false\",\n                        \"frontendApplicable_Flag\": \"false\",\n                        \"initial_Submitted_Date\": \"2019-02-15T00:00:00\"\n                    }\n                },\n                \"out-identifier\": \"RewardRegistration\",\n                \"return-object\": true\n            }\n        },\n        {\n            \"fire-all-rules\": {}\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation_1.0.0-SNAPSHOT",
+							"protocol": "http",
+							"host": [
+								"autoaws"
+							],
+							"port": "8080",
+							"path": [
+								"kie-server",
+								"services",
+								"rest",
+								"server",
+								"containers",
+								"instances",
+								"Claim-Validation_1.0.0-SNAPSHOT"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Undertow/1"
+						},
+						{
+							"key": "Server",
+							"value": "JBoss-EAP/7"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Apr 2019 15:31:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-KIE-ConversationId",
+							"value": "%27default-kie-server%27%3A%27Claim-Validation_1.0.0-SNAPSHOT%27%3A%27net.citrite.pip%3AClaim-Validation%3A1.0.0-SNAPSHOT%27%3A%277fa82e29-bcb5-46bc-aa4a-0ab4db601bf0%27"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "780"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"type\" : \"SUCCESS\",\n  \"msg\" : \"Container Claim-Validation_1.0.0-SNAPSHOT successfully called.\",\n  \"result\" : {\n    \"execution-results\" : {\n      \"results\" : [ {\n        \"value\" : {\"net.citrite.pip.sfdc.RewardRegistration\":{\n  \"incentive_Type\" : \"Citrix Ultimate Rewards\",\n  \"reward_Submitted_Date\" : [ 2019, 2, 12 ],\n  \"backendApplicable_Flag\" : false,\n  \"frontendApplicable_Flag\" : false,\n  \"initial_Submitted_Date\" : [ 2019, 2, 15 ],\n  \"registration_ID\" : \"Rwd-0896848\"\n}},\n        \"key\" : \"RewardRegistration\"\n      } ],\n      \"facts\" : [ {\n        \"value\" : {\"org.drools.core.common.DefaultFactHandle\":{\n  \"external-form\" : \"0:1:941685971:941685971:1:DEFAULT:NON_TRAIT:net.citrite.pip.sfdc.RewardRegistration\"\n}},\n        \"key\" : \"RewardRegistration\"\n      } ]\n    }\n  }\n}"
+				}
+			]
+		},
+		{
+			"name": "insert simple object with camelBack attributes Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "kieserver1!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "kieserver",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lookup\": \"citrite-default-ksession\",\n    \"commands\": [\n        {\n            \"insert\": {\n                \"object\": {\n                    \"citrite.orderLineItems\": [\n                                    {\n                                        \"order_ID\": \"0002541033\",\n                                        \"orderLine_ID\": \"OLI-00491693\",\n                                        \"product_Type\": \"software\",\n                                        \"edition\": \"STANDARD\",\n                                        \"sku_Marketing\": \"000000000004034076\",\n                                        \"product_Line_ID\": \"5118\",\n                                        \"discount_Program\": \"0.00\",\n                                        \"discount_Channel\": \"0.00\",\n                                        \"discount_Program_Amount\": \"0.00\",\n                                        \"sRP_USD\": \"700.00\",\n                                        \"srp_Order_Currency\": \"700.00\",\n                                        \"quantity\": \"10\",\n                                        \"partner_Incentive_Eligible_Flag\": \"false\",\n                                        \"partner_Eligible\": \"false\",\n                                        \"failure_Reasons\": \"null\",\n                                        \"cert_Required_Flag\": \"true\",\n                                        \"profit_Center\": \"0001000200\",\n                                        \"aag\": \"V1\",\n                                        \"partner_Eligible_Amount\": \"0.0\",\n                                        \"promo_Amount\": \"0.0\",\n                                        \"base_Amount\": \"0.0\",\n                                        \"partner_Incentive_Group\": \"X\",\n                                        \"transitionPath\": \"X\",\n                                        \"orderDiscounts\": null,\n                                        \"purchase_Type\": \"12\",\n                                        \"RTM_Material\": \"4\",\n                                        \"strategicProgramsPromos\": \"X\",\n                                        \"billing_Frequency\": \"null\"\n                                    }]\n                },\n                \"out-identifier\": \"RewardRegistration\",\n                \"return-object\": true\n            }\n        },\n        {\n            \"fire-all-rules\": {\n                \"out-identifier\": \"firedActivations\"\n            }\n        },\n        {\n            \"dispose\": {}\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation-POC_1.0.0-SNAPSHOT",
+					"protocol": "http",
+					"host": [
+						"autoaws"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"Claim-Validation-POC_1.0.0-SNAPSHOT"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation_1.0.0-SNAPSHOT Copy Copy Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"lookup\": \"citrite-default-ksession\",\n    \"commands\": [\n        {\n            \"insert\": {\n                \"object\": {\n                    \"net.citrite.pip.sfdc.RewardRegistration\": {\n                        \"registration_ID\": \"Rwd-0896848\",\n                        \"incentive_Type\": \"Citrix Ultimate Rewards\",\n                        \"reward_Submitted_Date\": \"2019-02-12T09:24:12\",\n                        \"backendApplicable_Flag\": \"false\",\n                        \"frontendApplicable_Flag\": \"false\",\n                        \"initial_Submitted_Date\": \"2019-02-15T00:00:00\"\n                    }\n                },\n                \"out-identifier\": \"RewardRegistration\",\n                \"return-object\": true\n            }\n        },\n        {\n            \"fire-all-rules\": {}\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation_1.0.0-SNAPSHOT",
+							"protocol": "http",
+							"host": [
+								"autoaws"
+							],
+							"port": "8080",
+							"path": [
+								"kie-server",
+								"services",
+								"rest",
+								"server",
+								"containers",
+								"instances",
+								"Claim-Validation_1.0.0-SNAPSHOT"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Undertow/1"
+						},
+						{
+							"key": "Server",
+							"value": "JBoss-EAP/7"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Apr 2019 15:31:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-KIE-ConversationId",
+							"value": "%27default-kie-server%27%3A%27Claim-Validation_1.0.0-SNAPSHOT%27%3A%27net.citrite.pip%3AClaim-Validation%3A1.0.0-SNAPSHOT%27%3A%277fa82e29-bcb5-46bc-aa4a-0ab4db601bf0%27"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "780"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"type\" : \"SUCCESS\",\n  \"msg\" : \"Container Claim-Validation_1.0.0-SNAPSHOT successfully called.\",\n  \"result\" : {\n    \"execution-results\" : {\n      \"results\" : [ {\n        \"value\" : {\"net.citrite.pip.sfdc.RewardRegistration\":{\n  \"incentive_Type\" : \"Citrix Ultimate Rewards\",\n  \"reward_Submitted_Date\" : [ 2019, 2, 12 ],\n  \"backendApplicable_Flag\" : false,\n  \"frontendApplicable_Flag\" : false,\n  \"initial_Submitted_Date\" : [ 2019, 2, 15 ],\n  \"registration_ID\" : \"Rwd-0896848\"\n}},\n        \"key\" : \"RewardRegistration\"\n      } ],\n      \"facts\" : [ {\n        \"value\" : {\"org.drools.core.common.DefaultFactHandle\":{\n  \"external-form\" : \"0:1:941685971:941685971:1:DEFAULT:NON_TRAIT:net.citrite.pip.sfdc.RewardRegistration\"\n}},\n        \"key\" : \"RewardRegistration\"\n      } ]\n    }\n  }\n}"
+				}
+			]
+		},
+		{
+			"name": "insert object with collection attribute",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "kieserver1!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "kieserver",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"commands\": [\n        {\n            \"insert\": {\n                \"object\": {\n                    \"net.citrite.pip.sfdc.Order\": {\n                        \"orderHeader\": {\n                            \"order_Type\": \"Z003\",\n                            \"order_ID\": \"0002541033\",\n                            \"order_Amount\": \"7128.15\",\n                            \"award_Type\": \"null\",\n                            \"contract_Type\": \"null\",\n                            \"contract_Level\": \"null\",\n                            \"contract_No\": \"null\",\n                            \"crder_Creation_Date\": \"2019-02-15T00:00:00\",\n                            \"crder_Matched_Date\": \"2019-02-15T09:54:01\",\n                            \"matched_Registration_ID\": \"Rwd-0896848\",\n                            \"shared_Reward_Flag\": \"false\",\n                            \"new_Customer_Flag\": \"false\",\n                            \"PO_Date\": \"2019-02-15T00:00:00\",\n                            \"PO_Number\": \"test_NFD_SMB_02\",\n                            \"validation_Status\": \"null\",\n                            \"failure_Reasons\": null,\n                            \"total_Partner_Eligible_Amount\": \"0.0\",\n                            \"total_Promo_Amount\": \"0.0\",\n                            \"total_Base_Amount\": \"0.0\",\n                            \"orderDiscounts\": null,\n                            \"distribution_Channel\": \"05\"\n                        },\n                        \"orderLineItems\": [\n                            {\n                                \"order_ID\": \"0002541033\",\n                                \"orderLine_ID\": \"OLI-00491693\",\n                                \"product_Type\": \"Software\",\n                                \"edition\": \"STANDARD\",\n                                \"SKU_Marketing\": \"000000000004034076\",\n                                \"product_Line_ID\": \"5118\",\n                                \"discount_Program\": \"0.00\",\n                                \"discount_Channel\": \"0.00\",\n                                \"discount_Program_Amount\": \"0.00\",\n                                \"SRP_USD\": \"700.00\",\n                                \"SRP_Order_Currency\": \"700.00\",\n                                \"quantity\": \"10\",\n                                \"partner_Incentive_Eligible_Flag\": \"false\",\n                                \"partner_Eligible\": \"false\",\n                                \"failure_Reasons\": \"null\",\n                                \"cert_Required_Flag\": \"true\",\n                                \"profit_Center\": \"0001000200\",\n                                \"AAG\": \"V1\",\n                                \"partner_Eligible_Amount\": \"0.0\",\n                                \"promo_Amount\": \"0.0\",\n                                \"base_Amount\": \"0.0\",\n                                \"partner_Incentive_Group\": \"X\",\n                                \"transitionPath\": \"X\",\n                                \"orderDiscounts\": null,\n                                \"purchase_Type\": \"12\",\n                                \"RTM_Material\": \"4\",\n                                \"strategicProgramsPromos\": \"X\",\n                                \"billing_Frequency\": \"null\"\n                            },\n                            {\n                                \"order_ID\": \"0002541033\",\n                                \"orderLine_ID\": \"OLI-00491694\",\n                                \"product_Type\": \"Software\",\n                                \"edition\": \"STANDARD\",\n                                \"sKU_Marketing\": \"000000000003013050\",\n                                \"product_Line_ID\": \"5118\",\n                                \"discount_Program\": \"0.00\",\n                                \"discount_Channel\": \"0.00\",\n                                \"discount_Program_Amount\": \"0.00\",\n                                \"sRP_USD\": \"3050.00\",\n                                \"sRP_Order_Currency\": \"3050.00\",\n                                \"quantity\": \"10\",\n                                \"partner_Incentive_Eligible_Flag\": \"true\",\n                                \"partner_Eligible\": \"false\",\n                                \"failure_Reasons\": \"null\",\n                                \"cert_Required_Flag\": \"true\",\n                                \"profit_Center\": \"0001000200\",\n                                \"aAG\": \"A1\",\n                                \"partner_Eligible_Amount\": \"0.0\",\n                                \"promo_Amount\": \"0.0\",\n                                \"base_Amount\": \"0.0\",\n                                \"partner_Incentive_Group\": \"X\",\n                                \"transitionPath\": \"X\",\n                                \"orderDiscounts\": null,\n                                \"purchase_Type\": \"4\",\n                                \"rTM_Material\": \"4\",\n                                \"strategicProgramsPromos\": \"X\",\n                                \"billing_Frequency\": \"null\"\n                            },\n                            {\n                                \"order_ID\": \"0002541033\",\n                                \"orderLine_ID\": \"OLI-00491695\",\n                                \"product_Type\": \"Software\",\n                                \"edition\": \"FEATURE\",\n                                \"sKU_Marketing\": \"000000000003016825\",\n                                \"product_Line_ID\": \"5214\",\n                                \"discount_Program\": \"0.00\",\n                                \"discount_Channel\": \"0.00\",\n                                \"discount_Program_Amount\": \"0.00\",\n                                \"sRP_USD\": \"3378.15\",\n                                \"sRP_Order_Currency\": \"3378.15\",\n                                \"quantity\": \"15\",\n                                \"partner_Incentive_Eligible_Flag\": \"true\",\n                                \"partner_Eligible\": \"false\",\n                                \"failure_Reasons\": \"null\",\n                                \"cert_Required_Flag\": \"true\",\n                                \"profit_Center\": \"0001000429\",\n                                \"aAG\": \"Z1\",\n                                \"partner_Eligible_Amount\": \"0.0\",\n                                \"promo_Amount\": \"0.0\",\n                                \"base_Amount\": \"0.0\",\n                                \"partner_Incentive_Group\": \"X\",\n                                \"transitionPath\": \"X\",\n                                \"orderDiscounts\": null,\n                                \"purchase_Type\": \"4\",\n                                \"rTM_Material\": \"4\",\n                                \"strategicProgramsPromos\": \"X\",\n                                \"billing_Frequency\": \"null\"\n                            }\n                        ]\n                    }\n                },\n                \"out-identifier\": \"RewardRegistration\",\n                \"return-object\": true\n            }\n        },\n        {\n            \"fire-all-rules\": {}\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation-POC_1.0.0",
+					"protocol": "http",
+					"host": [
+						"autoaws"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"Claim-Validation-POC_1.0.0"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation_1.0.0-SNAPSHOT (object with collection attribute)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"lookup\": \"citrite-default-ksession\",\n    \"commands\": [\n        {\n            \"insert\": {\n                \"object\": {\n                    \"net.citrite.pip.sfdc.Order\": {\n                        \"orderHeader\": {\n                            \"order_Type\": \"Z003\",\n                            \"order_ID\": \"0002541033\",\n                            \"order_Amount\": \"7128.15\",\n                            \"award_Type\": \"null\",\n                            \"contract_Type\": \"null\",\n                            \"contract_Level\": \"null\",\n                            \"contract_No\": \"null\",\n                            \"crder_Creation_Date\": \"2019-02-15T00:00:00\",\n                            \"crder_Matched_Date\": \"2019-02-15T09:54:01\",\n                            \"matched_Registration_ID\": \"Rwd-0896848\",\n                            \"shared_Reward_Flag\": \"false\",\n                            \"new_Customer_Flag\": \"false\",\n                            \"pO_Date\": \"2019-02-15T00:00:00\",\n                            \"pO_Number\": \"test_NFD_SMB_02\",\n                            \"validation_Status\": \"null\",\n                            \"failure_Reasons\": null,\n                            \"total_Partner_Eligible_Amount\": \"0.0\",\n                            \"total_Promo_Amount\": \"0.0\",\n                            \"total_Base_Amount\": \"0.0\",\n                            \"orderDiscounts\": null,\n                            \"distribution_Channel\": \"05\"\n                        },\n                        \"orderLineItems\": [\n                            {\n                                \"order_ID\": \"0002541033\",\n                                \"orderLine_ID\": \"OLI-00491693\",\n                                \"product_Type\": \"Software\",\n                                \"edition\": \"STANDARD\",\n                                \"sKU_Marketing\": \"000000000004034076\",\n                                \"product_Line_ID\": \"5118\",\n                                \"discount_Program\": \"0.00\",\n                                \"discount_Channel\": \"0.00\",\n                                \"discount_Program_Amount\": \"0.00\",\n                                \"sRP_USD\": \"700.00\",\n                                \"sRP_Order_Currency\": \"700.00\",\n                                \"quantity\": \"10\",\n                                \"partner_Incentive_Eligible_Flag\": \"false\",\n                                \"partner_Eligible\": \"false\",\n                                \"failure_Reasons\": \"null\",\n                                \"cert_Required_Flag\": \"true\",\n                                \"profit_Center\": \"0001000200\",\n                                \"aAG\": \"V1\",\n                                \"partner_Eligible_Amount\": \"0.0\",\n                                \"promo_Amount\": \"0.0\",\n                                \"base_Amount\": \"0.0\",\n                                \"partner_Incentive_Group\": \"X\",\n                                \"transitionPath\": \"X\",\n                                \"orderDiscounts\": null,\n                                \"purchase_Type\": \"12\",\n                                \"rTM_Material\": \"4\",\n                                \"strategicProgramsPromos\": \"X\",\n                                \"billing_Frequency\": \"null\"\n                            },\n                            {\n                                \"order_ID\": \"0002541033\",\n                                \"orderLine_ID\": \"OLI-00491694\",\n                                \"product_Type\": \"Software\",\n                                \"edition\": \"STANDARD\",\n                                \"sKU_Marketing\": \"000000000003013050\",\n                                \"product_Line_ID\": \"5118\",\n                                \"discount_Program\": \"0.00\",\n                                \"discount_Channel\": \"0.00\",\n                                \"discount_Program_Amount\": \"0.00\",\n                                \"sRP_USD\": \"3050.00\",\n                                \"sRP_Order_Currency\": \"3050.00\",\n                                \"quantity\": \"10\",\n                                \"partner_Incentive_Eligible_Flag\": \"true\",\n                                \"partner_Eligible\": \"false\",\n                                \"failure_Reasons\": \"null\",\n                                \"cert_Required_Flag\": \"true\",\n                                \"profit_Center\": \"0001000200\",\n                                \"aAG\": \"A1\",\n                                \"partner_Eligible_Amount\": \"0.0\",\n                                \"promo_Amount\": \"0.0\",\n                                \"base_Amount\": \"0.0\",\n                                \"partner_Incentive_Group\": \"X\",\n                                \"transitionPath\": \"X\",\n                                \"orderDiscounts\": null,\n                                \"purchase_Type\": \"4\",\n                                \"rTM_Material\": \"4\",\n                                \"strategicProgramsPromos\": \"X\",\n                                \"billing_Frequency\": \"null\"\n                            },\n                            {\n                                \"order_ID\": \"0002541033\",\n                                \"orderLine_ID\": \"OLI-00491695\",\n                                \"product_Type\": \"Software\",\n                                \"edition\": \"FEATURE\",\n                                \"sKU_Marketing\": \"000000000003016825\",\n                                \"product_Line_ID\": \"5214\",\n                                \"discount_Program\": \"0.00\",\n                                \"discount_Channel\": \"0.00\",\n                                \"discount_Program_Amount\": \"0.00\",\n                                \"sRP_USD\": \"3378.15\",\n                                \"sRP_Order_Currency\": \"3378.15\",\n                                \"quantity\": \"15\",\n                                \"partner_Incentive_Eligible_Flag\": \"true\",\n                                \"partner_Eligible\": \"false\",\n                                \"failure_Reasons\": \"null\",\n                                \"cert_Required_Flag\": \"true\",\n                                \"profit_Center\": \"0001000429\",\n                                \"aAG\": \"Z1\",\n                                \"partner_Eligible_Amount\": \"0.0\",\n                                \"promo_Amount\": \"0.0\",\n                                \"base_Amount\": \"0.0\",\n                                \"partner_Incentive_Group\": \"X\",\n                                \"transitionPath\": \"X\",\n                                \"orderDiscounts\": null,\n                                \"purchase_Type\": \"4\",\n                                \"rTM_Material\": \"4\",\n                                \"strategicProgramsPromos\": \"X\",\n                                \"billing_Frequency\": \"null\"\n                            }\n                        ]\n                    }\n                },\n                \"out-identifier\": \"RewardRegistration\",\n                \"return-object\": true\n            }\n        },\n        {\n            \"fire-all-rules\": {}\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://autoaws:8080/kie-server/services/rest/server/containers/instances/Claim-Validation_1.0.0-SNAPSHOT",
+							"protocol": "http",
+							"host": [
+								"autoaws"
+							],
+							"port": "8080",
+							"path": [
+								"kie-server",
+								"services",
+								"rest",
+								"server",
+								"containers",
+								"instances",
+								"Claim-Validation_1.0.0-SNAPSHOT"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Undertow/1"
+						},
+						{
+							"key": "Server",
+							"value": "JBoss-EAP/7"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Apr 2019 17:14:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-KIE-ConversationId",
+							"value": "%27default-kie-server%27%3A%27Claim-Validation_1.0.0-SNAPSHOT%27%3A%27net.citrite.pip%3AClaim-Validation%3A1.0.0-SNAPSHOT%27%3A%27bdf6638d-2ba5-428d-8b6d-323836b89e54%27"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2162"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"type\" : \"SUCCESS\",\n  \"msg\" : \"Container Claim-Validation_1.0.0-SNAPSHOT successfully called.\",\n  \"result\" : {\n    \"execution-results\" : {\n      \"results\" : [ {\n        \"value\" : {\"net.citrite.pip.sfdc.Order\":{\n  \"orderLineItems\" : [ {\n    \"product_Type\" : \"Software\",\n    \"edition\" : \"STANDARD\",\n    \"sku_Marketing\" : null,\n    \"product_Line_ID\" : \"5118\",\n    \"srp_USD\" : null,\n    \"order_ID\" : \"0002541033\",\n    \"orderLine_ID\" : \"OLI-00491693\",\n    \"discount_Program\" : 0.0,\n    \"discount_Channel\" : 0.0,\n    \"discount_Program_Amount\" : 0.0\n  }, {\n    \"product_Type\" : \"Software\",\n    \"edition\" : \"STANDARD\",\n    \"sku_Marketing\" : null,\n    \"product_Line_ID\" : \"5118\",\n    \"srp_USD\" : null,\n    \"order_ID\" : \"0002541033\",\n    \"orderLine_ID\" : \"OLI-00491694\",\n    \"discount_Program\" : 0.0,\n    \"discount_Channel\" : 0.0,\n    \"discount_Program_Amount\" : 0.0\n  }, {\n    \"product_Type\" : \"Software\",\n    \"edition\" : \"FEATURE\",\n    \"sku_Marketing\" : null,\n    \"product_Line_ID\" : \"5214\",\n    \"srp_USD\" : null,\n    \"order_ID\" : \"0002541033\",\n    \"orderLine_ID\" : \"OLI-00491695\",\n    \"discount_Program\" : 0.0,\n    \"discount_Channel\" : 0.0,\n    \"discount_Program_Amount\" : 0.0\n  } ],\n  \"orderHeader\" : {\n    \"distribution_Channel\" : \"05\",\n    \"total_Partner_Eligible_Amount\" : 0.0,\n    \"total_Promo_Amount\" : 0.0,\n    \"total_Base_Amount\" : 0.0,\n    \"orderDiscounts\" : null,\n    \"contract_Type\" : \"null\",\n    \"order_ID\" : \"0002541033\",\n    \"order_Amount\" : 7128.15,\n    \"award_Type\" : \"null\",\n    \"contract_Level\" : \"null\",\n    \"contract_No\" : \"null\",\n    \"order_Creation_Date\" : null,\n    \"order_Matched_Date\" : null,\n    \"matched_Registration_ID\" : \"Rwd-0896848\",\n    \"shared_Reward_Flag\" : false,\n    \"new_Customer_Flag\" : false,\n    \"po_Date\" : null,\n    \"po_Number\" : null,\n    \"validation_Status\" : \"null\",\n    \"failure_Reasons\" : null,\n    \"order_Type\" : \"Z003\"\n  }\n}},\n        \"key\" : \"RewardRegistration\"\n      } ],\n      \"facts\" : [ {\n        \"value\" : {\"org.drools.core.common.DefaultFactHandle\":{\n  \"external-form\" : \"0:1:1919360921:1919360921:1:DEFAULT:NON_TRAIT:net.citrite.pip.sfdc.Order\"\n}},\n        \"key\" : \"RewardRegistration\"\n      } ]\n    }\n  }\n}"
+				}
+			]
+		}
+	]
+}
