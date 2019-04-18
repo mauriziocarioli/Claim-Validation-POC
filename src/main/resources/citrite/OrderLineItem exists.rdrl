@@ -1,0 +1,11 @@
+package citrite;
+
+import java.lang.Number;
+
+rule "OrderLineItem exists"
+	dialect "mvel"
+	when
+		exists (BREObjectSFDC( )) 
+	then
+		System.out.println("DROOLS|Claim-Validation-POC> executing rule: "+drools.getRule().getName());
+end
