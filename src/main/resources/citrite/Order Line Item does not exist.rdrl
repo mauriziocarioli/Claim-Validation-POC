@@ -2,7 +2,7 @@ package citrite;
 
 import java.lang.Number;
 
-rule "OrderLineItems does not exist"
+rule "Order Line Item does not exist"
 	dialect "mvel"
 	when
 		not (OrderLineItem( )) 
