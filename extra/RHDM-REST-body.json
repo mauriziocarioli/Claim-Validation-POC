@@ -1,4 +1,5 @@
 {
+    "lookup": "citrite-default-ksession",
     "commands": [
         {
             "insert": {
@@ -22,25 +23,25 @@
                                     "po_Date": "2019-02-15T00:00:00",
                                     "po_Number": "test_NFD_SMB_02",
                                     "validation_Status": "null",
-                                    "failure_Reasons": null,
+                                    "failure_Reasons": "",
                                     "total_Partner_Eligible_Amount": "0.0",
                                     "total_Promo_Amount": "0.0",
                                     "total_Base_Amount": "0.0",
-                                    "orderDiscounts": null,
+                                    "orderDiscounts": "",
                                     "distribution_Channel": "05"
                                 },
                                 "orderLineItems": [
                                     {
                                         "order_ID": "0002541033",
                                         "orderLine_ID": "OLI-00491693",
-                                        "product_Type": "software",
-                                        "edition": "sTANDARD",
+                                        "product_Type": "Software",
+                                        "edition": "STANDARD",
                                         "sku_Marketing": "000000000004034076",
                                         "product_Line_ID": "5118",
                                         "discount_Program": "0.00",
                                         "discount_Channel": "0.00",
                                         "discount_Program_Amount": "0.00",
-                                        "srp_usd": "700.00",
+                                        "srp_USD": "700.00",
                                         "srp_Order_Currency": "700.00",
                                         "quantity": "10",
                                         "partner_Incentive_Eligible_Flag": "false",
@@ -54,67 +55,67 @@
                                         "base_Amount": "0.0",
                                         "partner_Incentive_Group": "X",
                                         "transitionPath": "X",
-                                        "orderDiscounts": null,
+                                        "orderDiscounts": "",
                                         "purchase_Type": "12",
-                                        "rTM_Material": "4",
+                                        "rtm_Material": "4",
                                         "strategicProgramsPromos": "X",
                                         "billing_Frequency": "null"
                                     },
                                     {
                                         "order_ID": "0002541033",
                                         "orderLine_ID": "OLI-00491694",
-                                        "product_Type": "software",
-                                        "edition": "sTANDARD",
-                                        "sKU_Marketing": "000000000003013050",
+                                        "product_Type": "Software",
+                                        "edition": "STANDARD",
+                                        "sku_Marketing": "000000000003013050",
                                         "product_Line_ID": "5118",
                                         "discount_Program": "0.00",
                                         "discount_Channel": "0.00",
                                         "discount_Program_Amount": "0.00",
-                                        "sRP_USD": "3050.00",
-                                        "sRP_Order_Currency": "3050.00",
+                                        "srp_USD": "3050.00",
+                                        "srp_Order_Currency": "3050.00",
                                         "quantity": "10",
                                         "partner_Incentive_Eligible_Flag": "true",
                                         "partner_Eligible": "false",
                                         "failure_Reasons": "null",
                                         "cert_Required_Flag": "true",
                                         "profit_Center": "0001000200",
-                                        "aAG": "A1",
+                                        "aag": "A1",
                                         "partner_Eligible_Amount": "0.0",
                                         "promo_Amount": "0.0",
                                         "base_Amount": "0.0",
                                         "partner_Incentive_Group": "X",
                                         "transitionPath": "X",
-                                        "orderDiscounts": null,
+                                        "orderDiscounts": "",
                                         "purchase_Type": "4",
-                                        "rTM_Material": "4",
+                                        "rtm_Material": "4",
                                         "strategicProgramsPromos": "X",
                                         "billing_Frequency": "null"
                                     },
                                     {
                                         "order_ID": "0002541033",
                                         "orderLine_ID": "OLI-00491695",
-                                        "product_Type": "software",
+                                        "product_Type": "Software",
                                         "edition": "FEATURE",
                                         "sKU_Marketing": "000000000003016825",
                                         "product_Line_ID": "5214",
                                         "discount_Program": "0.00",
                                         "discount_Channel": "0.00",
                                         "discount_Program_Amount": "0.00",
-                                        "sRP_USD": "3378.15",
-                                        "sRP_Order_Currency": "3378.15",
+                                        "srp_USD": "3378.15",
+                                        "srp_Order_Currency": "3378.15",
                                         "quantity": "15",
                                         "partner_Incentive_Eligible_Flag": "true",
                                         "partner_Eligible": "false",
                                         "failure_Reasons": "null",
                                         "cert_Required_Flag": "true",
                                         "profit_Center": "0001000429",
-                                        "aAG": "Z1",
+                                        "aag": "Z1",
                                         "partner_Eligible_Amount": "0.0",
                                         "promo_Amount": "0.0",
                                         "base_Amount": "0.0",
                                         "partner_Incentive_Group": "X",
                                         "transitionPath": "X",
-                                        "orderDiscounts": null,
+                                        "orderDiscounts": "",
                                         "purchase_Type": "4",
                                         "rTM_Material": "4",
                                         "strategicProgramsPromos": "X",
@@ -132,11 +133,11 @@
                             },
                             "partnerInfo": {
                                 "tags": {
-                                    "tagID": "pTN-115228",
-                                    "tagName": "s-PAM: AMS"
+                                    "tagID": "PTN-115228",
+                                    "tagName": "S-PAM: AMS"
                                 },
                                 "partner_Type": "CSN",
-                                "partner_Level": "pLATINUM",
+                                "partner_Level": "PLATINUM",
                                 "partner_Status": "Current",
                                 "partner_Geo": "Americas",
                                 "partner_Area": "Americas SMB Sales",
@@ -149,66 +150,66 @@
                             },
                             "partnerFunctions": {
                                 "billTo_Partner_Name": "XYZ Org",
-                                "billTo_Address_Line1": "billing Address Line 1",
-                                "billTo_Address_Line2": "billing Address Line 2",
-                                "billTo_City": "billing City",
-                                "billTo_State": "billing State",
+                                "billTo_Address_Line1": "Billing Address Line 1",
+                                "billTo_Address_Line2": "Billing Address Line 2",
+                                "billTo_City": "Billing City",
+                                "billTo_State": "Billing State",
                                 "billTo_Country": "null",
                                 "billTo_Postal_Code": "111111",
-                                "billTo_District": "billing District",
+                                "billTo_District": "Billing District",
                                 "billTo_Email_Address": "null",
                                 "billTo_User_Country_Code": "null",
                                 "soldTo_Partner_Name": "XYZ Org",
-                                "soldTo_Address_Line1": "sold to Line 1",
+                                "soldTo_Address_Line1": "Sold to Line 1",
                                 "soldTo_Address_Line2": "22222",
-                                "soldTo_City": "soldto City",
-                                "soldTo_State": "sold to State",
+                                "soldTo_City": "Soldto City",
+                                "soldTo_State": "Sold to State",
                                 "soldTo_Country": "US",
                                 "soldTo_Postal_Code": "02155",
                                 "soldTo_District": "District",
                                 "soldTo_Email_Address": "null",
                                 "soldTo_User_Country_Code": "null",
-                                "shipTo_Partner_Name": "shipto APrtner",
-                                "shipTo_Address_Line1": "shipTo_Address_Line1",
+                                "shipTo_Partner_Name": "Shipto APrtner",
+                                "shipTo_Address_Line1": "ShipTo_Address_Line1",
                                 "shipTo_Address_Line2": "null",
                                 "shipTo_City": "zxc",
                                 "shipTo_State": "za",
                                 "shipTo_Country": "US",
-                                "shipTo_Postal_Code": null,
+                                "shipTo_Postal_Code": "",
                                 "shipTo_District": "null",
                                 "shipTo_Email_Address": "null",
                                 "shipTo_User_Country_Code": "null"
                             },
                             "originalOrder": {
-                                "creation_Date": "0001-01-01T00:00:00",
-                                "pO_Date": "0001-01-01T00:00:00",
+                                "creation_Date": "2019-02-10T00:00:00",
+                                "po_Date": "0001-01-01T00:00:00",
                                 "document_Date": "0001-01-01T00:00:00"
                             },
-                            "salesExceptions": null,
+                            "salesExceptions": "",
                             "productAuthorizations": [
                                 {
                                     "product_Line_ID": "5246",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5256",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5258",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5257",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5132",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5118",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5174",
@@ -216,15 +217,15 @@
                                 },
                                 {
                                     "product_Line_ID": "5147",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5175",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5158",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5143",
@@ -240,7 +241,7 @@
                                 },
                                 {
                                     "product_Line_ID": "5225",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5140",
@@ -260,7 +261,7 @@
                                 },
                                 {
                                     "product_Line_ID": "5214",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5219",
@@ -268,15 +269,15 @@
                                 },
                                 {
                                     "product_Line_ID": "5243",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5249",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5255",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5205",
@@ -284,7 +285,7 @@
                                 },
                                 {
                                     "product_Line_ID": "5210",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5191",
@@ -292,96 +293,72 @@
                                 },
                                 {
                                     "product_Line_ID": "5253",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5250",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5251",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 },
                                 {
                                     "product_Line_ID": "5252",
-                                    "cert_Status": "certified"
+                                    "cert_Status": "Certified"
                                 }
                             ],
                             "endUserInfo": {
                                 "end_User_Org_ID": "51535787",
                                 "end_User_Geo": "Americas",
-                                "end_User_Area": "Americas SMB, Mid-Market, &amp; Renewal Sales",
+                                "end_User_Area": "Americas SMB, Mid-Market, & Renewal Sales",
                                 "end_User_Territory": "US Northeast MB",
-                                "end_User_Region": "US North MB1",
+                                "end_User_Region": "US North MB",
                                 "end_User_Email_Address": "dreher@shelton-cook.com",
-                                "high_Touch_Flag": "false"
+                                "High_Touch_Flag": "false"
                             },
                             "specializations": [
                                 {
-                                    "systemName": "virtualization",
-                                    "status": "active",
+                                    "systemName": "Virtualization",
+                                    "status": "Active",
                                     "bre_Status": "Not Achieved",
-                                    "AddData": [
-                                        {
-                                            "value": "2015-06-15 00:00:00",
-                                            "key": "award Date"
-                                        }
-                                    ]
+                                    "addData": {
+                                        "Key": "Award Date",
+                                        "value": "2015-06-15 00:00:00"
+                                    }
                                 },
                                 {
-                                    "systemName": "NetworkingforApps&amp;MobileSecurity",
-                                    "status": "active",
+                                    "systemName": "NetworkingforApps&MobileSecurity",
+                                    "status": "Active",
                                     "bre_Status": "Not Achieved",
-                                    "AddData": [
-                                        {
-                                            "key": "award Date",
-                                            "value": "2015-06-24 00:00:00"
-                                        }
-                                    ]
+                                    "addData": {
+                                        "Key": "Award Date",
+                                        "value": "2015-06-24 00:00:00"
+                                    }
                                 },
                                 {
                                     "systemName": "NetworkingforDataCenter",
-                                    "status": "active",
+                                    "status": "Active",
                                     "bre_Status": "Not Achieved",
-                                    "AddData": [
-                                        {
-                                            "key": "award Date",
-                                            "value": "2015-08-28 00:00:00"
-                                        }
-                                    ]
+                                    "addData": {
+                                        "Key": "Award Date",
+                                        "value": "2015-08-28 00:00:00"
+                                    }
                                 },
                                 {
                                     "systemName": "MobileManagement",
-                                    "status": "active",
+                                    "status": "Active",
                                     "bre_Status": "Not Achieved",
-                                    "dddData": {
-                                        "award Date": "2015-09-01 00:00:00"
+                                    "addData": {
+                                        "Key": "Award Date",
+                                        "value": "2015-09-01 00:00:00"
                                     }
                                 }
                             ]
-                        },
-                        "Validations": [
-                            {
-                                "checkName": "Minimum Order Amount Requirement Unmet",
-                                "checkDate": "2019-02-19T10:42:15.3465419-05:00",
-                                "checkResult": "FAIL",
-                                "header": "true",
-                                "orderID": "0002541033",
-                                "checkType": "EXCEPTION",
-                                "mergedStatus": "false"
-                            }
-                        ],
-                        "Payout": {},
-                        "info": {
-                            "request_DateTime": "2019-02-15T09:54:01",
-                            "response_DateTime": "2019-02-15T09:54:01",
-                            "status": null,
-                            "interaction_Id": "533200ce-389e-1dd4-f187-929e22a40d26",
-                            "source": "SFDC"
                         }
                     }
                 },
-                "out-identifier": "BREObjectSDFC",
+                "out-identifier": "BREObjectSFDC",
                 "return-object": true
             }
         },
